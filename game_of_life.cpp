@@ -141,7 +141,10 @@ class TABLE{
           cout<< "neighbors set:"<<endl;  
      }
      CELL* findCellByXY(int x, int y){
-         return &this->getcurrentMatrix()[y][x];
+          vector<vector<CELL>>* current =getcurrentMatrix();
+          vector<CELL> row=(*current)[y];
+          CELL* target = &row[x];
+          return target;
      }
      vector<std::vector<CELL>>* getcurrentMatrix(){
           if(this->current_matrix_is_a==true){
