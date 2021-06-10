@@ -15,11 +15,11 @@ class CELL{
                this->x=_x;
                this->y=_y;
           }
-          bool getLife(){
+          int get_life(){
                return this->life;
           }
-          void set_life(int bLife){
-               this->life = bLife;
+          void set_life(int _Life){
+               this->life = _Life;
           }
           void setN(CELL* n1,CELL* n2,CELL* n3,CELL* n4,CELL* n5,CELL* n6,CELL* n7,CELL* n8){
                this->neighbors[0]=n1;
@@ -32,18 +32,15 @@ class CELL{
                this->neighbors[7]=n8;
           }
           int nVal(){
-               return (this->neighbors[0]->getLife()+
-               this->neighbors[1]->getLife()+
-               this->neighbors[2]->getLife()+
-               this->neighbors[3]->getLife()+
-               this->neighbors[4]->getLife()+
-               this->neighbors[5]->getLife()+
-               this->neighbors[6]->getLife()+
-               this->neighbors[7]->getLife());
+               int n=0;
+               for (CELL* c : this->neighbors){
+                    n+=c->get_life();
+               }
+               return n;
           }
           int game_of_life(){
                int n = this->nVal();
-               int l = this->getLife();
+               int l = this->get_life();
                return (l==1)?(n>3||n<2)?0:1:(n==3)?1:0;
           }
 };
@@ -56,7 +53,6 @@ class TABLE{
      vector<vector<CELL>> matrix_B;
      bool current_matrix_is_a = true;
      TABLE(){
-          cout<< "table function:"<<endl;  
           this->matrix_A.resize (this->width);
           this->matrix_B.resize (this->width);
           for (int x = 0; x < this->width; x++){
@@ -135,12 +131,13 @@ class TABLE{
                     (*next_matrix)[x][y].set_life((*current_matrix)[x][y].game_of_life());
                }    
           }
+          this->flip_matrix();
+
      }
      void render(int i){
           for(int index=0;index<i;index++){
                this->step();
                this->writeFile(index);
-               this->flip_matrix();
           }
      }
      void writeFile(int i){
@@ -149,7 +146,7 @@ class TABLE{
           file << "render:"+to_string(i)+"\n\n";    
           for(int y=0;y<this->height;y++){
                for(int x=0;x<this->width;x++){
-                    int life = ((*current_matrix)[x][y].getLife());
+                    int life = ((*current_matrix)[x][y].get_life());
                     file << to_string(life);
                }
                file << "\n";    
@@ -177,12 +174,20 @@ int main(){
      t.findCellByXY(12,12)->set_life(1);
      t.findCellByXY(13,12)->set_life(1);
      t.findCellByXY(14,12)->set_life(1);
-     t.findCellByXY(15,12)->set_life(1);
-     t.findCellByXY(16,12)->set_life(1);
-     t.findCellByXY(17,12)->set_life(1);
-     t.findCellByXY(18,12)->set_life(1);
+     
+     CELL* test = t.findCellByXY(25,25);
+     for(CELL* n : test->neighbors){
+          n->set_life(1);
+     }
+
+
+
+     t.writeFile(100);
 
      for(int i=0; i<10;i++){
           t.render(i);
      }
+
+std::cin.get();
 }
+
