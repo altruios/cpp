@@ -168,10 +168,9 @@ int main()
      int test = t.findCellByXY(10,10)->getLife();
      CELL*  testCell = t.findCellByXY(10,11);
      cout<<"test cell done?" <<endl;
-
      cout << testCell->x <<testCell->y <<" should be 10 and 11?" <<endl;
-     cout << test << "is test" << endl;
+
      for(int i=0; i<1000;i++){
-          cout << test<<endl;
+     cout << testCell->x <<testCell->y <<" should be 10 and 11?" <<endl;
      }
 }
