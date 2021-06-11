@@ -1,16 +1,16 @@
 #include <iostream>
 #include <fstream>
 #include <math.h>
-
+#include <stdio.h>
 #include <vector>
+#include <chrono>     
 using namespace std;
-constexpr int _height=50;
-constexpr int _width=50;
+constexpr int _height=1080;
+constexpr int _width=1920;
 struct RGB
 {
     uint8_t r,g,b;
 };
-
 
 class CELL{
      public:
@@ -29,26 +29,30 @@ class CELL{
           int get_life(){
                return this->life;
           }
-          
-          int get_g(){
-               return this->g;
+          RGB get_color(){
+               RGB C;
+               C.r=this->r;
+               C.g=this->g;
+               C.b=this->b;
+               return C;
           }
-          
-          int get_r(){
-               return this->r;
-          }
-          int get_b(){
-               return this->b;
-          }
-          void color_step(){
-               this->r= min(255,this->c*29);
-               this->b= min(255,this->c*59);
-               this->g= min(255,this->c*47);
+          void set_color(){
+               if(this->get_life()){
+               this->r= max(min(255,int(cos(this->c+1)*sin(29))),150);
+               this->b= max(min(255,int(cos(this->c+1)*sin(59))),150);
+               this->g= max(min(255,int(cos(this->c+1)*sin(47))),150);
+               }else{
+                    
+               this->r= min(150,int(sin(this->c+1)*cos(29)));
+               this->b= min(150,int(sin(this->c+1)*cos(59)));
+               this->g= min(150,int(sin(this->c+1)*cos(47)));
+               }
           }
           void set_life(int _Life){
                this->life = _Life;
+               this->set_color();
           }
-          void setN(CELL* n1,CELL* n2,CELL* n3,CELL* n4,CELL* n5,CELL* n6,CELL* n7,CELL* n8){
+          void set_n(CELL* n1,CELL* n2,CELL* n3,CELL* n4,CELL* n5,CELL* n6,CELL* n7,CELL* n8){
                this->neighbors[0]=n1;
                this->neighbors[1]=n2;
                this->neighbors[2]=n3;
@@ -58,23 +62,26 @@ class CELL{
                this->neighbors[6]=n7;
                this->neighbors[7]=n8;
           }
-          int nVal(){
+          int get_n(){
                int n=0;
                for (CELL* c : this->neighbors){
                     n+=c->get_life();
                }
                return n;
           }
-          int game_of_life(){
-               int n = this->nVal();
-               int l = this->get_life();
-               int g = (l==1)?(n>3||n<2)?0:1:(n==3)?1:0;
-               if(g==l){
+          void color_counter_step(int g){
+               if(g==this->get_life()){
                     this->c++;
                }else{
                     this->c=0;
                }
-               this->color_step();
+          }
+          int game_of_life(){
+               int n = this->get_n();
+               int l = this->get_life();
+               int g = (l==1)?(n>3||n<2)?0:1:(n==3)?1:0;
+               this->color_counter_step(g);
+               this->set_color();
 
                return g;
 
@@ -83,23 +90,23 @@ class CELL{
 
 class TABLE{
      public:
-     int pixelsSize = _height*_width*3;
-     unsigned char* pixels=(unsigned char*)malloc(this->width*this->height*3);
      int height=_height;
      int width=_width;
      vector<vector<CELL>> matrix_A;
      vector<vector<CELL>> matrix_B;
-     vector<vector<RGB>>  rMatrix;
+     vector<vector<RGB>>  matrix_C;
      bool current_matrix_is_a = true;
      TABLE(){
           this->matrix_A.resize (this->width);
           this->matrix_B.resize (this->width);
-          this->rMatrix.resize (this->width);
+          this->matrix_C.resize (this->width);
 
           for (int x = 0; x < this->width; x++){
                for (int y = 0; y < this->height; y++){
+                    RGB r;     
                     this->matrix_A[x].push_back(CELL(x,y));
-                    this->matrix_B[x].push_back(CELL(x,y));     
+                    this->matrix_B[x].push_back(CELL(x,y));
+                    this->matrix_C[x].push_back(r);     
                }
           }
           this->_setNeighbors();
@@ -134,16 +141,16 @@ class TABLE{
 
                     this->flip_matrix();
 
-                    this->matrix_A[x][y].setN(n1,n2,n3,n4,n5,n6,n7,n8);
-                    this->matrix_B[x][y].setN(nb1,nb2,nb3,nb4,nb5,nb6,nb7,nb8);    
+                    this->matrix_A[x][y].set_n(n1,n2,n3,n4,n5,n6,n7,n8);
+                    this->matrix_B[x][y].set_n(nb1,nb2,nb3,nb4,nb5,nb6,nb7,nb8);    
                }
           }
           cout<< "neighbors set"<<endl;  
      }
      CELL* findCellByXY(int x, int y){
-          return &(*getcurrentMatrix())[x][y];
+          return &(*get_current_matrix())[x][y];
      }
-     vector<std::vector<CELL>>* getcurrentMatrix(){
+     vector<std::vector<CELL>>* get_current_matrix(){
           if(this->current_matrix_is_a==true){
                return &this->matrix_A; 
           }
@@ -155,21 +162,18 @@ class TABLE{
           }
           return &this->matrix_B;
      }
-     int countNValOf(CELL &c){
-          int nVal= c.nVal();
-          return nVal;
-     }
      void flip_matrix(){
           this->current_matrix_is_a = !this->current_matrix_is_a;
      }
      void step(){
-          vector<vector<CELL>>* current_matrix = this->getcurrentMatrix();
+          vector<vector<CELL>>* current_matrix = this->get_current_matrix();
           vector<vector<CELL>>* next_matrix = this->get_next_matrix();
 
           for(int y=0;y<this->height-1;y++){
                for(int x=0;x<this->width-1;x++){
                     int step = (y*this->width+x);
                     (*next_matrix)[x][y].set_life((*current_matrix)[x][y].game_of_life());
+                    this->set_pixel(x,y,next_matrix);
                }    
           }
           this->flip_matrix();
@@ -178,40 +182,31 @@ class TABLE{
      void render(int i){
           for(int index=0;index<i;index++){
                this->step();
-               this->writeFile(index);
+               this->write_file(index);
           }
      }
-     void render_image(){
-          vector<vector<CELL>>* current_matrix = this->getcurrentMatrix();
-          for(int x=0;x<this->width;x++){
-               for(int y=0;y<this->height;y++){
-                    this->setPixel(x,y,current_matrix);
-               }
-          }
-     }
-     void writeFile(int i){
-          std::ofstream file("game of life_test_"+std::to_string(i)+".txt");      
-          this->render_image();
-          file << "render:"+to_string(i)+"\n\n";    
+     void write_file(int i){
+          char file_name[50];
+          int file_name_length;
+          file_name_length=sprintf (file_name, "images\\game_of_life_test_%d.ppm\0", i);              
+          FILE *file = fopen(file_name, "wb");      
+          fprintf(file, "P6\n%d %d\n255\n", this->width, this->height);
           for(int x =0;x<this->width;x++){
                for(int y =0;y<this->height;y++){
-                    file<< this->rMatrix[x][y].r;
-                    file<< this->rMatrix[x][y].g;
-                    file<< this->rMatrix[x][y].b;
+                    unsigned char color[3];
+                    color[0]=this->matrix_C[x][y].r;
+                    color[1]=this->matrix_C[x][y].g;
+                    color[2]=this->matrix_C[x][y].b;
+                    fwrite(color, 1, 3, file);
                }
           }
-
-
-
-          file.close();
+          fclose(file);
      }
-     void setPixel(int x, int y, vector<vector<CELL>>* current_matrix)
-          {
-          RGB color;
-          color.r = ((*current_matrix)[x][y].get_r());
-          color.g = ((*current_matrix)[x][y].get_g());
-          color.b = ((*current_matrix)[x][y].get_b());
-          this->rMatrix[x][y]=color;
+     void set_pixel(int x, int y, vector<vector<CELL>>* current_matrix){
+          RGB color= ((*current_matrix)[x][y].get_color());
+          this->matrix_C[x][y].r=color.r;
+          this->matrix_C[x][y].g=color.g;
+          this->matrix_C[x][y].b=color.b;
      }
 };
 
@@ -234,20 +229,30 @@ int main(){
      t.findCellByXY(12,12)->set_life(1);
      t.findCellByXY(13,12)->set_life(1);
      t.findCellByXY(14,12)->set_life(1);
+
+
+     t.findCellByXY(_width,_height)->set_life(1);
+     t.findCellByXY(40,40)->set_life(1);
+     t.findCellByXY(40,41)->set_life(1);
+     t.findCellByXY(40,42)->set_life(1);
+     t.findCellByXY(41,42)->set_life(1);
+     t.findCellByXY(42,41)->set_life(1);
      
      CELL* test = t.findCellByXY(25,25);
      for(CELL* n : test->neighbors){
-
           n->set_life(1);
      }
-
-
-     cout<<"writing to test file"<<endl;
-     t.writeFile(100);
-
-     for(int i=0; i<10;i++){
-          cout<<"rendering  "<<i<<endl;
+     CELL* test2 = t.findCellByXY(0,0);
+     test2->set_life(1);
+     test2->c=10;
+     for(int i=0; i<100;i++){
+          auto start = std::chrono::high_resolution_clock::now();
+          cout<<"rendering  "<<i;
           t.render(i);
+          auto stop = std::chrono::high_resolution_clock::now();
+          auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+          cout << "which took: "<<duration.count() << " milliseconds"<<"\r";
+
      }
 
 std::cin.get();
