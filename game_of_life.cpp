@@ -4,25 +4,11 @@
 #include <stdio.h>
 #include <vector>
 #include <chrono>     
-using namespace std;
+using namespace std; 
 constexpr int _height=1080;
 constexpr int _width=1920;
 
-class RGB{
-     public:
-     uint8_t r,g,b;
-     RGB(){
-          this->r=0;
-          this->g=0;
-          this->b=0;
-     }
-     RGB(int r, int g, int b){
-          this->r=r;
-          this->g=g;
-          this->b=b;
-     }
-     
-};
+
 class Cell{
      public:
           int life=0;
@@ -47,8 +33,7 @@ class Cell{
                return this->c;
           }
           void set_life(int _Life){
-                         this->life = _Life;
-
+               this->life = _Life;
                this->color_counter_step(_Life);
           }
           void set_n(Cell* n1,Cell* n2,Cell* n3,Cell* n4,Cell* n5,Cell* n6,Cell* n7,Cell* n8){
@@ -79,7 +64,6 @@ class Cell{
                int n = this->get_n();
                int l = this->get_life();
                int g = (l==1)?(n>3||n<2)?0:1:(n==3)?1:0;
-              // cout<<"n l g"<<n<<" : "<<l<<" : "<<g<<endl;
                this->color_counter_step(g);
                return g;
           }
@@ -236,6 +220,9 @@ int main(){
      cout << "Hello World" << endl;
      Board t;
      cout<<"table made"<<endl;
+     t.set_pixel_and_matrixies(0,0);
+     t.set_pixel_and_matrixies(1,0);
+     t.set_pixel_and_matrixies(2,0);
 
      t.set_pixel_and_matrixies(10,10);
 
@@ -274,9 +261,7 @@ int main(){
      for(Cell* n : test->neighbors){
           n->set_life(1);
      }
-     Cell* test2 = t.findCellByXY(0,0);
-     test2->set_life(1);
-     test2->c=10;
+
      long average=0;
      for(int i=0;i<99999;i++){
           t.set_random_pixel();
