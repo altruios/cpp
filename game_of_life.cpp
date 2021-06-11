@@ -1,15 +1,26 @@
 #include <iostream>
 #include <fstream>
-#include <math.h> 
+#include <math.h>
+
 #include <vector>
 using namespace std;
 constexpr int _height=50;
 constexpr int _width=50;
+struct RGB
+{
+    uint8_t r,g,b;
+};
+
+
 class CELL{
      public:
           int life=0;
           int x;
           int y;
+          int r=0;
+          int g=0;
+          int b=0;
+          int c=0;
           CELL* neighbors[8];
           CELL(int _x,int _y){
                this->x=_x;
@@ -17,6 +28,22 @@ class CELL{
           }
           int get_life(){
                return this->life;
+          }
+          
+          int get_g(){
+               return this->g;
+          }
+          
+          int get_r(){
+               return this->r;
+          }
+          int get_b(){
+               return this->b;
+          }
+          void color_step(){
+               this->r= min(255,this->c*29);
+               this->b= min(255,this->c*59);
+               this->g= min(255,this->c*47);
           }
           void set_life(int _Life){
                this->life = _Life;
@@ -41,24 +68,38 @@ class CELL{
           int game_of_life(){
                int n = this->nVal();
                int l = this->get_life();
-               return (l==1)?(n>3||n<2)?0:1:(n==3)?1:0;
+               int g = (l==1)?(n>3||n<2)?0:1:(n==3)?1:0;
+               if(g==l){
+                    this->c++;
+               }else{
+                    this->c=0;
+               }
+               this->color_step();
+
+               return g;
+
           }
 };
 
 class TABLE{
      public:
+     int pixelsSize = _height*_width*3;
+     unsigned char* pixels=(unsigned char*)malloc(this->width*this->height*3);
      int height=_height;
      int width=_width;
      vector<vector<CELL>> matrix_A;
      vector<vector<CELL>> matrix_B;
+     vector<vector<RGB>>  rMatrix;
      bool current_matrix_is_a = true;
      TABLE(){
           this->matrix_A.resize (this->width);
           this->matrix_B.resize (this->width);
+          this->rMatrix.resize (this->width);
+
           for (int x = 0; x < this->width; x++){
                for (int y = 0; y < this->height; y++){
-                    matrix_A[x].push_back(CELL(x,y));
-                    matrix_B[x].push_back(CELL(x,y));     
+                    this->matrix_A[x].push_back(CELL(x,y));
+                    this->matrix_B[x].push_back(CELL(x,y));     
                }
           }
           this->_setNeighbors();
@@ -140,18 +181,37 @@ class TABLE{
                this->writeFile(index);
           }
      }
-     void writeFile(int i){
+     void render_image(){
           vector<vector<CELL>>* current_matrix = this->getcurrentMatrix();
-          std::ofstream file("game of life_test_"+std::to_string(i)+".txt");      
-          file << "render:"+to_string(i)+"\n\n";    
-          for(int y=0;y<this->height;y++){
-               for(int x=0;x<this->width;x++){
-                    int life = ((*current_matrix)[x][y].get_life());
-                    file << to_string(life);
+          for(int x=0;x<this->width;x++){
+               for(int y=0;y<this->height;y++){
+                    this->setPixel(x,y,current_matrix);
                }
-               file << "\n";    
           }
+     }
+     void writeFile(int i){
+          std::ofstream file("game of life_test_"+std::to_string(i)+".txt");      
+          this->render_image();
+          file << "render:"+to_string(i)+"\n\n";    
+          for(int x =0;x<this->width;x++){
+               for(int y =0;y<this->height;y++){
+                    file<< this->rMatrix[x][y].r;
+                    file<< this->rMatrix[x][y].g;
+                    file<< this->rMatrix[x][y].b;
+               }
+          }
+
+
+
           file.close();
+     }
+     void setPixel(int x, int y, vector<vector<CELL>>* current_matrix)
+          {
+          RGB color;
+          color.r = ((*current_matrix)[x][y].get_r());
+          color.g = ((*current_matrix)[x][y].get_g());
+          color.b = ((*current_matrix)[x][y].get_b());
+          this->rMatrix[x][y]=color;
      }
 };
 
@@ -177,17 +237,20 @@ int main(){
      
      CELL* test = t.findCellByXY(25,25);
      for(CELL* n : test->neighbors){
+
           n->set_life(1);
      }
 
 
-
+     cout<<"writing to test file"<<endl;
      t.writeFile(100);
 
      for(int i=0; i<10;i++){
+          cout<<"rendering  "<<i<<endl;
           t.render(i);
      }
 
 std::cin.get();
 }
+
 
