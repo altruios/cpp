@@ -7,52 +7,64 @@
 using namespace std;
 constexpr int _height=1080;
 constexpr int _width=1920;
-struct RGB
-{
-    uint8_t r,g,b;
-};
 
-class CELL{
+class RGB{
+     public:
+     uint8_t r,g,b;
+     RGB(){
+          this->r=0;
+          this->g=0;
+          this->b=0;
+     }
+     RGB(int r, int g, int b){
+          this->r=r;
+          this->g=g;
+          this->b=b;
+     }
+     
+};
+class Cell{
      public:
           int life=0;
           int x;
           int y;
-          int r=0;
-          int g=0;
-          int b=0;
           int c=0;
-          CELL* neighbors[8];
-          CELL(int _x,int _y){
+          RGB color{0,0,0};
+          Cell* neighbors[8];
+          Cell(int _x,int _y){
                this->x=_x;
                this->y=_y;
           }
           int get_life(){
                return this->life;
           }
-          RGB get_color(){
-               RGB C;
-               C.r=this->r;
-               C.g=this->g;
-               C.b=this->b;
-               return C;
+          int get_life_count(){
+               return c;
+          }
+          RGB* get_color(){
+               return &this->color;
           }
           void set_color(){
                if(this->get_life()){
-               this->r= max(min(255,int(cos(this->c+1)*sin(29))),150);
-               this->b= max(min(255,int(cos(this->c+1)*sin(59))),150);
-               this->g= max(min(255,int(cos(this->c+1)*sin(47))),150);
-               }else{
-                    
-               this->r= min(150,int(sin(this->c+1)*cos(29)));
-               this->b= min(150,int(sin(this->c+1)*cos(59)));
-               this->g= min(150,int(sin(this->c+1)*cos(47)));
+               this->color.r= max(min(255,int(cos(this->c+1)*sin(29))),150);
+               this->color.b= max(min(255,int(cos(this->c+1)*sin(59))),150);
+               this->color.g= max(min(255,int(cos(this->c+1)*sin(47))),150);
+               }else{  
+               this->color.r= min(150,int(sin(this->c+1)*cos(29)));
+               this->color.b= min(150,int(sin(this->c+1)*cos(59)));
+               this->color.g= min(150,int(sin(this->c+1)*cos(47)));
                }
           }
-          void set_life(int _Life){
+          int set_life_get_count(int _Life){
+               this->color_counter_step(_Life);
                this->life = _Life;
-               this->set_color();
+               return this->c;
           }
-          void set_n(CELL* n1,CELL* n2,CELL* n3,CELL* n4,CELL* n5,CELL* n6,CELL* n7,CELL* n8){
+          void set_life(int _Life){
+               this->color_counter_step(_Life);
+               this->life = _Life;
+          }
+          void set_n(Cell* n1,Cell* n2,Cell* n3,Cell* n4,Cell* n5,Cell* n6,Cell* n7,Cell* n8){
                this->neighbors[0]=n1;
                this->neighbors[1]=n2;
                this->neighbors[2]=n3;
@@ -64,7 +76,7 @@ class CELL{
           }
           int get_n(){
                int n=0;
-               for (CELL* c : this->neighbors){
+               for (Cell* c : this->neighbors){
                     n+=c->get_life();
                }
                return n;
@@ -82,21 +94,19 @@ class CELL{
                int g = (l==1)?(n>3||n<2)?0:1:(n==3)?1:0;
                this->color_counter_step(g);
                this->set_color();
-
                return g;
-
           }
 };
 
-class TABLE{
+class Board{
      public:
      int height=_height;
      int width=_width;
-     vector<vector<CELL>> matrix_A;
-     vector<vector<CELL>> matrix_B;
+     vector<vector<Cell>> matrix_A;
+     vector<vector<Cell>> matrix_B;
      vector<vector<RGB>>  matrix_C;
      bool current_matrix_is_a = true;
-     TABLE(){
+     Board(){
           this->matrix_A.resize (this->width);
           this->matrix_B.resize (this->width);
           this->matrix_C.resize (this->width);
@@ -104,8 +114,8 @@ class TABLE{
           for (int x = 0; x < this->width; x++){
                for (int y = 0; y < this->height; y++){
                     RGB r;     
-                    this->matrix_A[x].push_back(CELL(x,y));
-                    this->matrix_B[x].push_back(CELL(x,y));
+                    this->matrix_A[x].push_back(Cell(x,y));
+                    this->matrix_B[x].push_back(Cell(x,y));
                     this->matrix_C[x].push_back(r);     
                }
           }
@@ -119,25 +129,25 @@ class TABLE{
                     int wrappedXUnder=  (x-1)<0              ? this->width-1  :x-1;
                     int wrappedXOver =  (x+1)>this->width-1  ? 0              :x+1;
 
-                    CELL* n1=this->findCellByXY(x,wrappedYUnder);
-                    CELL* n2=this->findCellByXY(wrappedXOver,wrappedYUnder);
-                    CELL* n3=this->findCellByXY(wrappedXOver,y);
-                    CELL* n4=this->findCellByXY(wrappedXOver,wrappedYOver);
-                    CELL* n5=this->findCellByXY(x,wrappedYOver);
-                    CELL* n6=this->findCellByXY(wrappedXUnder,wrappedYOver);
-                    CELL* n7=this->findCellByXY(wrappedXUnder,(y));
-                    CELL* n8=this->findCellByXY(wrappedXUnder,wrappedYUnder);
+                    Cell* n1=this->findCellByXY(x,wrappedYUnder);
+                    Cell* n2=this->findCellByXY(wrappedXOver,wrappedYUnder);
+                    Cell* n3=this->findCellByXY(wrappedXOver,y);
+                    Cell* n4=this->findCellByXY(wrappedXOver,wrappedYOver);
+                    Cell* n5=this->findCellByXY(x,wrappedYOver);
+                    Cell* n6=this->findCellByXY(wrappedXUnder,wrappedYOver);
+                    Cell* n7=this->findCellByXY(wrappedXUnder,(y));
+                    Cell* n8=this->findCellByXY(wrappedXUnder,wrappedYUnder);
 
                     this->flip_matrix();
 
-                    CELL* nb1=this->findCellByXY(x,wrappedYUnder);
-                    CELL* nb2=this->findCellByXY(wrappedXOver,wrappedYUnder);
-                    CELL* nb3=this->findCellByXY(wrappedXOver,y);
-                    CELL* nb4=this->findCellByXY(wrappedXOver,wrappedYOver);
-                    CELL* nb5=this->findCellByXY(x,wrappedYOver);
-                    CELL* nb6=this->findCellByXY(wrappedXUnder,wrappedYOver);
-                    CELL* nb7=this->findCellByXY(wrappedXUnder,(y));
-                    CELL* nb8=this->findCellByXY(wrappedXUnder,wrappedYUnder);
+                    Cell* nb1=this->findCellByXY(x,wrappedYUnder);
+                    Cell* nb2=this->findCellByXY(wrappedXOver,wrappedYUnder);
+                    Cell* nb3=this->findCellByXY(wrappedXOver,y);
+                    Cell* nb4=this->findCellByXY(wrappedXOver,wrappedYOver);
+                    Cell* nb5=this->findCellByXY(x,wrappedYOver);
+                    Cell* nb6=this->findCellByXY(wrappedXUnder,wrappedYOver);
+                    Cell* nb7=this->findCellByXY(wrappedXUnder,(y));
+                    Cell* nb8=this->findCellByXY(wrappedXUnder,wrappedYUnder);
 
                     this->flip_matrix();
 
@@ -147,16 +157,16 @@ class TABLE{
           }
           cout<< "neighbors set"<<endl;  
      }
-     CELL* findCellByXY(int x, int y){
+     Cell* findCellByXY(int x, int y){
           return &(*get_current_matrix())[x][y];
      }
-     vector<std::vector<CELL>>* get_current_matrix(){
+     vector<std::vector<Cell>>* get_current_matrix(){
           if(this->current_matrix_is_a==true){
                return &this->matrix_A; 
           }
           return &this->matrix_B;
      }
-     vector<std::vector<CELL>>* get_next_matrix(){
+     vector<std::vector<Cell>>* get_next_matrix(){
           if(this->current_matrix_is_a==false){
                return &this->matrix_A; 
           }
@@ -166,53 +176,61 @@ class TABLE{
           this->current_matrix_is_a = !this->current_matrix_is_a;
      }
      void step(){
-          vector<vector<CELL>>* current_matrix = this->get_current_matrix();
-          vector<vector<CELL>>* next_matrix = this->get_next_matrix();
-
+          vector<vector<Cell>>* current_matrix = this->get_current_matrix();
+          vector<vector<Cell>>* next_matrix = this->get_next_matrix();
           for(int y=0;y<this->height-1;y++){
                for(int x=0;x<this->width-1;x++){
-                    int step = (y*this->width+x);
-                    (*next_matrix)[x][y].set_life((*current_matrix)[x][y].game_of_life());
-                    this->set_pixel(x,y,next_matrix);
+                    int c= (*next_matrix)[x][y].set_life_get_count((*current_matrix)[x][y].game_of_life());
+                    this->set_pixel(x,y,c,(*next_matrix)[x][y].get_life(),next_matrix);
                }    
           }
           this->flip_matrix();
-
      }
      void render(int i){
-          for(int index=0;index<i;index++){
                this->step();
-               this->write_file(index);
-          }
+               this->write_file(i);
+          
      }
      void write_file(int i){
           char file_name[50];
           int file_name_length;
-          file_name_length=sprintf (file_name, "images\\game_of_life_test_%d.ppm\0", i);              
+          file_name_length=sprintf(file_name, "images\\game_of_life_test_%d.ppm\0", i);              
           FILE *file = fopen(file_name, "wb");      
           fprintf(file, "P6\n%d %d\n255\n", this->width, this->height);
           for(int x =0;x<this->width;x++){
                for(int y =0;y<this->height;y++){
-                    unsigned char color[3];
-                    color[0]=this->matrix_C[x][y].r;
-                    color[1]=this->matrix_C[x][y].g;
-                    color[2]=this->matrix_C[x][y].b;
-                    fwrite(color, 1, 3, file);
+                    unsigned char _color[3];
+                    _color[0]=this->matrix_C[x][y].r;
+                    _color[1]=this->matrix_C[x][y].g;
+                    _color[2]=this->matrix_C[x][y].b;
+                    fwrite(_color, 1, 3, file);
                }
           }
           fclose(file);
      }
-     void set_pixel(int x, int y, vector<vector<CELL>>* current_matrix){
-          RGB color= ((*current_matrix)[x][y].get_color());
-          this->matrix_C[x][y].r=color.r;
-          this->matrix_C[x][y].g=color.g;
-          this->matrix_C[x][y].b=color.b;
+     void set_pixel(int x, int y,int c, int l, vector<vector<Cell>>* current_matrix){
+          if(l){
+               this->matrix_C[x][y].r= 255;
+               this->matrix_C[x][y].b= 255;
+               this->matrix_C[x][y].g= 255;
+               }else{  
+               this->matrix_C[x][y].r=0;
+               this->matrix_C[x][y].b= 0;
+               this->matrix_C[x][y].g= 0;
+               }
+              
+     }
+     void set_random_pixel(){
+          int x=rand()%(this->width-1);
+          int y=rand()%(this->height-1);
+          cout<<"x: "<<x<<" y: "<<y<<endl;
+          (*this->get_current_matrix())[x][y].set_life(1);
      }
 };
 
 int main(){
      cout << "Hello World" << endl;
-     TABLE t;
+     Board t;
      cout<<"table made"<<endl;
      t.findCellByXY(10,10)->set_life(1);
      t.findCellByXY(11,10)->set_life(1);
@@ -238,20 +256,28 @@ int main(){
      t.findCellByXY(41,42)->set_life(1);
      t.findCellByXY(42,41)->set_life(1);
      
-     CELL* test = t.findCellByXY(25,25);
-     for(CELL* n : test->neighbors){
+     Cell* test = t.findCellByXY(25,25);
+     for(Cell* n : test->neighbors){
           n->set_life(1);
      }
-     CELL* test2 = t.findCellByXY(0,0);
+     Cell* test2 = t.findCellByXY(0,0);
      test2->set_life(1);
      test2->c=10;
+     long average=0;
+     for(int i=0;i<1500;i++){
+          t.set_random_pixel();
+          cout <<"setting random pixel"<< i <<endl;
+     }
      for(int i=0; i<100;i++){
           auto start = std::chrono::high_resolution_clock::now();
           cout<<"rendering  "<<i;
           t.render(i);
           auto stop = std::chrono::high_resolution_clock::now();
           auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
-          cout << "which took: "<<duration.count() << " milliseconds"<<"\r";
+          average = duration.count()*1/(i+1)+average;
+          int iterations_left=100-i;
+          long estimation = iterations_left*average;
+          cout << "  which took: "<<duration.count() << " milliseconds... total time estimation is: "<< estimation<<"milliseconds left \r";
 
      }
 
