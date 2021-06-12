@@ -24,7 +24,7 @@ class Renderer:
                "ffmpeg",
                "-r", str(self.frameRate),
                "-f", "image2",
-               "-i", os.path.join(base_dir,"images",'%5d.ppn'),
+               "-i", os.path.join(base_dir,"images",'game_of_life_test_%05d.ppm'),
                     os.path.join(base_dir, "renders",f"{time.time()}_gol.mov")
           ]
           )
@@ -42,17 +42,7 @@ class Renderer:
                     padd=padd+"0"
                     charCount=charCount+1
           return padd+str(number)
-     def forMateImages(self):
 
-          for count, filename in enumerate(os.listdir(img_dir)):
-               dstString = self.pad((count),5) + ".ppn"
-               src = os.path.join(img_dir,filename)
-               dst = os.path.join(img_dir,dstString)     
-               # rename() function will
-               # rename all the files
-               os.rename(src, dst)
 frameRate =16;
-
 R =  Renderer(frameRate)
-R.forMateImages()
 R.renderVideo()

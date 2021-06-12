@@ -3,10 +3,11 @@
 #include <math.h>
 #include <stdio.h>
 #include <vector>
-#include <chrono>     
+#include <chrono>
+#include <thread>
 using namespace std; 
-constexpr int _height=1080;
-constexpr int _width =1920;
+constexpr int _height=50;
+constexpr int _width =50;
 
 
 class Cell{
@@ -82,15 +83,14 @@ class Board{
           this->matrix_A.resize (this->width);
           this->matrix_B.resize (this->width);
           this->matrix_C.resize (this->width);
-
-          for (int x = 0; x < this->width; x++){
-               this->matrix_C[x].resize(this->height);
-               for (int y = 0; y < this->height; y++){
-                    this->matrix_C[x][y].resize(3);     
-                    this->matrix_A[x].push_back(Cell(x,y));
-                    this->matrix_B[x].push_back(Cell(x,y));
+          for (int y = 0; y < this->height; y++){
+               this->matrix_C[y].resize(this->width);
+               for (int x = 0; x < this->width; x++){
+                    this->matrix_C[y][x].resize(3);     
+                    this->matrix_A[y].push_back(Cell(x,y));
+                    this->matrix_B[y].push_back(Cell(x,y));
                     for(int c = 0; c<3;c++){
-                         this->matrix_C[x][y][c]=0;     
+                         this->matrix_C[y][x][c]=0;     
                     }
                }
           }
@@ -133,7 +133,8 @@ class Board{
           cout<< "neighbors set"<<endl;  
      }
      Cell* get_cell_by_XY(int x, int y){
-          return &(*get_current_matrix())[x][y];
+          //the refference of the cell at [y][x] of the the matrix of pointer
+          return &(*get_current_matrix())[y][x];
      }
      vector<std::vector<Cell>>* get_current_matrix(){
           if(this->current_matrix_is_a==true){
@@ -151,51 +152,84 @@ class Board{
           this->current_matrix_is_a = !this->current_matrix_is_a;
      }
      void step(){
+          cout<<"we take a step:"<<endl;
           vector<vector<Cell>>* current_matrix = this->get_current_matrix();
           vector<vector<Cell>>* next_matrix = this->get_next_matrix();
           for(int y=0;y<this->height-1;y++){
                for(int x=0;x<this->width-1;x++){
-                    int l = (*current_matrix)[x][y].game_of_life();
-                    int c= (*next_matrix)[x][y].set_life_get_count(l);
+                    int l = (*current_matrix)[y][x].game_of_life();
+                    int c= (*next_matrix)[y][x].set_life_get_count(l);
                     this->set_pixel(x,y,l,c);
                }    
           }
           this->flip_matrix();
      }
      void render(int i){
+          this->render_images(i);
+          this->render_video();
+     }
+     void render_images(int i){
+          int render_count = i;
+          string function_name = "render_images";
+          for(int file_count =0;file_count<render_count;file_count++){
+               auto start = std::chrono::high_resolution_clock::now();
                this->step();
-               this->write_file(i);
-          
+               this->write_file(file_count);
+               auto stop = std::chrono::high_resolution_clock::now();
+               auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+               cout<<function_name << "  which took: "<<duration.count() << "\n";
+          }
      }
      void write_file(int i){
           char file_name[50];
           int file_name_length;
-          file_name_length=sprintf(file_name, "images\\game_of_life_test_%d.ppm\0", i);              
+          file_name_length=sprintf(file_name, "images\\game_of_life_test_%05d.ppm\0",  i);
+          char file_test_name[50];
+          int file_test_name_length;
+          file_test_name_length=sprintf(file_test_name,"tests\\game_of_life_test_%d.txt\0",i);              
           FILE *file = fopen(file_name, "wb");      
+          ofstream test_file(file_test_name);
+          test_file<< "render test: ", i, "\n\n";
           fprintf(file, "P6\n%d %d\n255\n", this->width-1, this->height-1);
-          for(int x =0;x<this->width-1;x++){
-               for(int y =0;y<this->height-1;y++){
-                    this->_color[0]=this->matrix_C[x][y][0];  
-                    this->_color[1]=this->matrix_C[x][y][1];
-                    this->_color[2]=this->matrix_C[x][y][2];
+          test_file<<"[\n";
+          for(int y =0;y<this->height-1;y++){
+               test_file<< " [";
+               for(int x =0;x<this->width-1;x++){
+                    this->load_color(x,y);
                     fwrite(this->_color,1,3, file);
-
+                    int l = (*this->get_current_matrix())[y][x].get_life();
+                    int other_l = (*this->get_next_matrix())[y][x].get_life();
+                    test_file<< "(x:"<< x<<" y:"<< y<<" c_m:"<<l<<", n_m:: "<<other_l<<"),";
                }
+               test_file<<"],\n";
           }
+          test_file<<"]";
           fclose(file);
+          test_file.close();
      }
-     
+     void load_color(int x,int y){
+          this->_color[0]=this->matrix_C[y][x][0];  
+          this->_color[1]=this->matrix_C[y][x][1];
+          this->_color[2]=this->matrix_C[y][x][2];
+     }
+     void render_video(){
+          //todo - python scipt call/replace.
+          std::string command = "python3 imgToVid.py";
+
+          FILE *python_render_script= popen(command.c_str(),"r");
+          fscanf(python_render_script, command.c_str());
+     }
      void set_pixel(int x, int y,int l,int c){
           if(l){
 
-               this->matrix_C[x][y][0]=255;
-               this->matrix_C[x][y][1]=255;
-               this->matrix_C[x][y][2]=255;
+               this->matrix_C[y][x][0]=255;
+               this->matrix_C[y][x][1]=255;
+               this->matrix_C[y][x][2]=255;
                
                }else{  
-               this->matrix_C[x][y][0]=0;
-               this->matrix_C[x][y][1]=0;
-               this->matrix_C[x][y][2]=0;
+               this->matrix_C[y][x][0]=0;
+               this->matrix_C[y][x][1]=0;
+               this->matrix_C[y][x][2]=0;
                
                }
      }
@@ -203,71 +237,49 @@ class Board{
           int x=rand()%(this->width-1);
           int y=rand()%(this->height-1);
           this->set_pixel(x,y,1,1);
-          (*this->get_current_matrix())[x][y].set_life(1);
-          (*this->get_next_matrix())[x][y].set_life(1);
+          (*this->get_current_matrix())[y][x].set_life(1);
+          (*this->get_next_matrix())[y][x].set_life(1);
 
      }
      void set_pixel_and_matrixies(int x, int y){
+          
           this->set_pixel(x,y,1,1);
-          (*this->get_current_matrix())[x][y].set_life(1);
-          (*this->get_next_matrix())[x][y].set_life(1);
+          (*this->get_current_matrix())[y][x].set_life(1);
+          (*this->get_next_matrix())[y][x].set_life(1);
 
      }
+
 };
 
 int main(){
      cout << "making game of life:" << endl;
      Board t;
      cout<<"board made"<<endl;
-     t.set_pixel_and_matrixies(0,0);
-     t.set_pixel_and_matrixies(1,0);
-     t.set_pixel_and_matrixies(2,0);
-     t.set_pixel_and_matrixies(10,10);
-     t.set_pixel_and_matrixies(11,10);
-     t.set_pixel_and_matrixies(12,10);
-     t.set_pixel_and_matrixies(13,10);
-     t.set_pixel_and_matrixies(14,10);
-     t.set_pixel_and_matrixies(15,10);
-     t.set_pixel_and_matrixies(16,10);
-     t.set_pixel_and_matrixies(17,10);
-     t.set_pixel_and_matrixies(18,10);
-     t.set_pixel_and_matrixies(10,12);
-     t.set_pixel_and_matrixies(11,12);
-     t.set_pixel_and_matrixies(12,12);
-     t.set_pixel_and_matrixies(13,12);
-     t.set_pixel_and_matrixies(14,12);
-     t.set_pixel_and_matrixies(_width-1,_height-1);
-     t.set_pixel_and_matrixies(40,40);
-     t.set_pixel_and_matrixies(40,41);
-     t.set_pixel_and_matrixies(40,42);
-     t.set_pixel_and_matrixies(41,42);
-     t.set_pixel_and_matrixies(42,41);
+     vector<vector<int>> test_points {
+          {0,0},{1,0},{2,0},{16,10},{17,10},{18,10},{10,12},{11,12},{12,12},{13,12},
+          {14,12}, {_width-1,_height-1},{40,40},{40,41},{40,42},{41,42},{42,41},{31,31},{31,32},{31,33}
+     };
+     for(vector<int> item: test_points){
+     t.set_pixel_and_matrixies(item[0],item[1]);    
+     }
      Cell* test = t.get_cell_by_XY(25,25);
      for(Cell* n : test->neighbors){
           n->set_life(1);
      }
-     t.write_file(100);
+     t.write_file(100); 
+          
+          t.render(100);
 
-     long average=0;
-     for(int i=0;i<99999;i++){
-          t.set_random_pixel();
-     }
-
-     t.write_file(101);
-     for(int i=0; i<100;i++){
-          auto start = std::chrono::high_resolution_clock::now();
-          cout<<"rendering  "<<i;
-          t.render(i);
-          auto stop = std::chrono::high_resolution_clock::now();
-          auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
-          average = duration.count()*1/(i+1)+average;
-          int iterations_left=100-i;
-          long estimation = iterations_left*average;
-          cout << "  which took: "<<duration.count() << " milliseconds... total time estimation is: "<< estimation<<"milliseconds left \r";
-
-     }
-
-std::cin.get();
+     cout<< "completed" <<endl;
+     cout<<"closing in: ";
+     cout<<"\b \b3";
+     std::chrono::seconds one_second(30);
+     std::this_thread::sleep_for(one_second);
+     cout<<"\b \b2";
+     std::this_thread::sleep_for(one_second);
+     cout<<"\b \b1... just kidding... 30 seconds";
+     std::this_thread::sleep_for(one_second);
+     return 0;
 }
 
 
