@@ -7,9 +7,9 @@
 #include <thread>
 # define M_PI           3.14159265358979323846  /* pi */
 using namespace std; 
-constexpr int _height=270;
-constexpr int _width =480;
-constexpr int _scale = 8;
+constexpr int _height=540;
+constexpr int _width =960;
+constexpr int _scale = 4;
 
 
 class Cell{
@@ -74,7 +74,7 @@ class Board{
      int scale=_scale;
      vector<vector<Cell>> matrix_A;
      vector<vector<Cell>> matrix_B;
-     vector<vector<vector<unsigned char>>>  matrix_C;
+     vector<vector<std::array<unsigned char, 3>>>  matrix_C;
      bool current_matrix_is_a = true;
      unsigned char _color[3];
      Board(){
@@ -85,7 +85,7 @@ class Board{
           for (int y = 0; y < this->height; y++){
                this->matrix_C[y].resize(this->width);
                for (int x = 0; x < this->width; x++){
-                    this->matrix_C[y][x].resize(3);     
+                  //  this->matrix_C[y][x].resize(3);     
                     this->matrix_A[y].push_back(Cell(x,y));
                     this->matrix_B[y].push_back(Cell(x,y));
                     for(int c = 0; c<3;c++){
@@ -172,12 +172,14 @@ class Board{
           for(int file_count =0;file_count<render_count;file_count++){
                auto start = std::chrono::high_resolution_clock::now();
                this->write_file(file_count);
-               this->step();
                auto stop = std::chrono::high_resolution_clock::now();
                auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
                auto count_left= render_count-file_count;
-               auto estimation  = duration.count()*count_left;
-               cout<<function_name << "  which took: "<<duration.count() <<"  eta:"<<estimation<< "\r";
+               long estimation  = (duration.count()*count_left)/1000;
+
+               this->step();
+
+               cout<<function_name << file_count<<"of:"<<render_count<<"  which took: "<<duration.count() <<"  eta:"<<estimation<< "\r";
           }
      }
      void write_file(int i){
@@ -190,8 +192,8 @@ class Board{
                     for(int i=0;i<this->scale;i++){
                          for(int x =0;x<this->width-1;x++){
                               for(int j=0;j<this->scale;j++){
-                              this->load_color(x,y);
-                              fwrite(this->_color,1,3, file);
+                              //this->load_color(x,y);
+                              fwrite(&this->matrix_C[y][x],1,3, file);
                          }
                     }
                }
@@ -212,9 +214,9 @@ class Board{
      }
      void set_pixel(int x, int y,int l,int c){
           if(l){
-               this->matrix_C[y][x][0]=floor(150*sin((c)/M_PI) +155);
-               this->matrix_C[y][x][1]=floor(150*tan((c*2)/M_PI)+155);
-               this->matrix_C[y][x][2]=floor(150*cos((c*3)/M_PI)+155);
+               this->matrix_C[y][x][0]=floor(100*sin((c)/M_PI*100) +105);
+               this->matrix_C[y][x][1]=floor(100*tan((c*2)/M_PI*100)+155);
+               this->matrix_C[y][x][2]=floor(100*cos((c*3)/M_PI*100)+155);
                
                }else{  
                this->matrix_C[y][x][0]=0;
@@ -254,7 +256,7 @@ class Board{
           int y=rand()%(this->height-40) +20;
           vector<vector<int>> glider {{x,y},{x,y+1},{x,y+2},{x-1,y+2},{x-2,y+1}};
           for(vector<int> item: glider){
-               t.set_pixel_and_matrixies(item[0],item[1]);    
+               this->set_pixel_and_matrixies(item[0],item[1]);    
           }
      }
 };
@@ -269,18 +271,16 @@ int main(){
      for(int i=0;i<4200;i++){
           t.add_glider();
      }
-     for(int video_file_count =0;video_file_count<50;video_file_count++)
-          {      
-          t.render(5000);
-     }
+     t.render(10000);
+
      cout<< "completed" <<endl;
      cout<<"closing in: ";
      cout<<"\b \b3";
-     std::chrono::seconds one_second(30);
+     std::chrono::seconds one_second(1);
      std::this_thread::sleep_for(one_second);
      cout<<"\b \b2";
      std::this_thread::sleep_for(one_second);
-     cout<<"\b \b1... just kidding... 30 seconds";
+     cout<<"\b \b1...";
      std::this_thread::sleep_for(one_second);
      return 0;
 }
