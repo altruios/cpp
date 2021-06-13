@@ -28,20 +28,6 @@ class Renderer:
                     os.path.join(base_dir, "renders",f"{time.time()}_gol.mov")
           ]
           )
-     def pad(self,number,paddSize):
-          charCount=0
-          padd=""
-          for char in str(number):
-               charCount=charCount+1
-          if(charCount>paddSize):
-               raise Exception("well, got some bad shit here")
-          if(charCount==paddSize):
-               return number
-          else:
-               while(charCount<paddSize):
-                    padd=padd+"0"
-                    charCount=charCount+1
-          return padd+str(number)
 
 frameRate =16;
 R =  Renderer(frameRate)
