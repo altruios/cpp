@@ -6,11 +6,15 @@
 #include <chrono>
 #include <thread>
 # define M_PI           3.14159265358979323846  /* pi */
+#include "json.hpp"
+
+// for convenience
+using json = nlohmann::json;
 using namespace std; 
 constexpr int _height=540;
 constexpr int _width =960;
 constexpr int _scale = 4;
-
+class Shape;
 
 class Cell{
      public:
@@ -76,7 +80,6 @@ class Board{
      vector<vector<Cell>> matrix_B;
      vector<vector<std::array<unsigned char, 3>>>  matrix_C;
      bool current_matrix_is_a = true;
-     unsigned char _color[3];
      Board(){
           cout<<"board started"<<endl;
           this->matrix_A.resize (this->width);
@@ -85,7 +88,6 @@ class Board{
           for (int y = 0; y < this->height; y++){
                this->matrix_C[y].resize(this->width);
                for (int x = 0; x < this->width; x++){
-                  //  this->matrix_C[y][x].resize(3);     
                     this->matrix_A[y].push_back(Cell(x,y));
                     this->matrix_B[y].push_back(Cell(x,y));
                     for(int c = 0; c<3;c++){
@@ -162,24 +164,28 @@ class Board{
           }
           this->flip_matrix();
      }
-     void render(int i){
-          this->render_images(i);
+     void render(int i, int render_number){
+          this->render_images(i,render_number);
           this->render_video();
+          std::chrono::seconds rest_time(100);
+          std::this_thread::sleep_for(rest_time);
+
      }
-     void render_images(int i){
+     void render_images(int i, int render_number){
           int render_count = i;
           string function_name = "render_images";
           for(int file_count =0;file_count<render_count;file_count++){
                auto start = std::chrono::high_resolution_clock::now();
                this->write_file(file_count);
+               this->step();
+
                auto stop = std::chrono::high_resolution_clock::now();
                auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
                auto count_left= render_count-file_count;
                long estimation  = (duration.count()*count_left)/1000;
 
-               this->step();
 
-               cout<<function_name << file_count<<"of:"<<render_count<<"  which took: "<<duration.count() <<"  eta:"<<estimation<< "\r";
+               cout<<function_name << file_count<<"of:"<<render_count<<"  which took: "<<duration.count() <<"  eta:"<<estimation<< "to finish video "<< render_number<<"\r";
           }
      }
      void write_file(int i){
@@ -187,27 +193,18 @@ class Board{
           int file_name_length;
           file_name_length=sprintf(file_name, "images\\game_of_life_test_%05d.ppm\0",  i);
           FILE *file = fopen(file_name, "wb");      
-          fprintf(file, "P6\n%d %d\n255\n", (this->width-1)*(this->scale), (this->height-1)*(this->scale));
+          fprintf(file, "P6\n%d %d\n255\n", (this->width-1), (this->height-1));
                for(int y =0;y<this->height-1;y++){
-                    for(int i=0;i<this->scale;i++){
-                         for(int x =0;x<this->width-1;x++){
-                              for(int j=0;j<this->scale;j++){
-                              //this->load_color(x,y);
-                              fwrite(&this->matrix_C[y][x],1,3, file);
-                         }
+                    for(int x =0;x<this->width-1;x++){
+                         fwrite(&this->matrix_C[y][x],1,3, file);
                     }
                }
-          }
           fclose(file);
      }
-     void load_color(int x,int y){
-          this->_color[0]=this->matrix_C[y][x][0];  
-          this->_color[1]=this->matrix_C[y][x][1];
-          this->_color[2]=this->matrix_C[y][x][2];
-     }
      void render_video(){
-          //todo - python scipt call/replace.
-          std::string command = "python imgToVid.py";
+          //todo - python scipt call/replace with direct command?.
+          //pass arguments in etc... clean up.
+          std::string command = "python imgToVid_scale.py";
 
           FILE *python_render_script= popen(command.c_str(),"r");
           fscanf(python_render_script, command.c_str());
@@ -232,11 +229,11 @@ class Board{
           (*this->get_current_matrix())[y][x].set_life(1);
           (*this->get_next_matrix())[y][x].set_life(1);
      }
-     void set_pixel_and_matrixies(int x, int y){
+     void set_pixel_and_matrixies(int x, int y, int life){
           
-          this->set_pixel(x,y,1,1);
-          (*this->get_current_matrix())[y][x].set_life(1);
-          (*this->get_next_matrix())[y][x].set_life(1);
+          this->set_pixel(x,y,life,1);
+          (*this->get_current_matrix())[y][x].set_life(life);
+          (*this->get_next_matrix())[y][x].set_life(life);
 
      }
      void set_neighbors_of_XY(int x,int y){
@@ -251,28 +248,119 @@ class Board{
 
            }
      }
+     void add_shape(int x,int y,vector<vector<int>> shape){
+          for(vector<int> item: shape){
+
+               this->set_pixel_and_matrixies(x+item[0],y+item[1],1);    
+          }
+     }
      void add_glider(){
           int x=rand()%(this->width-40)+20;
           int y=rand()%(this->height-40) +20;
           vector<vector<int>> glider {{x,y},{x,y+1},{x,y+2},{x-1,y+2},{x-2,y+1}};
           for(vector<int> item: glider){
-               this->set_pixel_and_matrixies(item[0],item[1]);    
+               this->set_pixel_and_matrixies(item[0],item[1],1);    
+          }
+     }
+     void clear(){
+          for(int y = 0; y < this->height;y++){
+               for(int x = 0;x < this->width;x++){
+                    this->set_pixel_and_matrixies(x,y,0);
+               }
+          }
+     }
+     void set_shape(vector<vector<int>> pattern,int x,int y){
+          for(vector<int> item: pattern){
+               int safex=item[0];
+               safex+=x;
+               int safey=item[1];
+               safey+=y;
+               if(safex>this->width-1)       safex=0;
+               else if(safex+x<0)            safex=this->width-1;
+               if(safey+y>this->height-1)    safey=0;
+               else if(safey+y<0)            safey=this->height-1;
+               this->set_pixel_and_matrixies(safex,safey,1);
           }
      }
 };
 
 
+class Shape{
+     public:
+     vector<vector<int>> pattern;
+     int height;
+     int width;
+     string name;
+     string author;
+     Board *board_ref;
+     int id;
+     Shape(string name, string author, vector<vector<int>> pattern, Board *ref,int id){
+          this->board_ref=ref;
+          this->pattern = pattern;
+          this->height=sizeof(pattern);
+          this->width=sizeof(pattern[0]);
+          this->author = author;
+          this->name = name;
+          this->id=id;
+     }
+     equals(Shape other_shape){
+          if(this->id==other_shape.id){
+               return true;
+          }
+          return false;
+     }
+};
+vector<Shape> get_lexicon_shapes(Board &board_ref){
+     std::ifstream json_file("game_of_life_lexicon.json");
+     json lexicon;
+     json_file >> lexicon;
+     vector<Shape> lexicon_shapes;
+     int id=1;
+     for(const auto &item: lexicon.items()){
+          string name = item.value()["name"].get<std::string>();
+          string author = item.value()["author"].get<std::string>();
+          vector<vector<int>> pattern;
+          for(const auto &coordinate: item.value()["pattern"].items()){
+               int x = coordinate.value()["x"];
+               int y = coordinate.value()["y"];
+               vector<int> c{x,y};
+               pattern.push_back(c);
+          }
+          lexicon_shapes.push_back(Shape(name,author, pattern,&board_ref,id));
+          id++;
+     }
+     return lexicon_shapes;
+}
 
-
+Shape* get_random_shape(vector<Shape>& s){
+          int index=rand()%(sizeof(s));
+          return &(s[index]);
+}
+     
 int main(){
      cout << "making game of life:" << endl;
      Board t;
      cout<<"board made"<<endl;
-     for(int i=0;i<4200;i++){
-          t.add_glider();
-     }
-     t.render(10000);
+     vector<Shape> lexicon = get_lexicon_shapes(t);
+     vector<Shape> used_shapes;
+     for(int vid_count =0;vid_count<360;vid_count++){
+          t.render(4500, vid_count);
+          t.clear();
+          for(int i=0;i<4200;i++){
+               Shape *s = get_random_shape(lexicon);
+               t.set_shape(s->pattern,rand()%(t.width-s->width),rand()%(t.height-s->height));
+               bool new_shape_is= true;
+               for (Shape os : used_shapes){
+                    if(s->equals(os)){
+                         new_shape_is=false;
+                    }
+               }
+               if(new_shape_is){
+                    used_shapes.push_back(*s);
+               }
 
+          }
+     }
      cout<< "completed" <<endl;
      cout<<"closing in: ";
      cout<<"\b \b3";

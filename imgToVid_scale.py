@@ -24,6 +24,7 @@ class Renderer:
                "ffmpeg",
                "-r", str(self.frameRate),
                "-f", "image2",
+               "-s","4096x2048",
                "-i", os.path.join(base_dir,"images",'game_of_life_test_%05d.ppm'),
                     os.path.join(base_dir, "renders",f"{time.time()}_gol.mov")
           ]
