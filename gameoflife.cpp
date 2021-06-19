@@ -14,8 +14,30 @@ using namespace std;
 constexpr int _height=540;
 constexpr int _width =960;
 constexpr int _scale = 4;
-class Shape;
-
+class Board;
+class Shape{
+     public:
+     vector<vector<int>> pattern;
+     int height;
+     int width;
+     string name;
+     Board *board_ref;
+     int id;
+     Shape(string name, vector<vector<int>> pattern, Board *ref,int id,int height,int width){
+          this->board_ref=ref;
+          this->pattern = pattern;
+          this->height=height;
+          this->width=width;
+          this->name = name;
+          this->id=id;
+     }
+     bool equals(Shape other_shape){
+          if(this->id==other_shape.id){
+               return true;
+          }
+          return false;
+     }
+};
 class Cell{
      public:
           int life=0;
@@ -164,7 +186,7 @@ class Board{
           }
           this->flip_matrix();
      }
-     void render(int i, int render_number){
+     void render(int i, int render_number, vector<string> used_shapes){
           this->render_images(i,render_number);
           this->render_video();
           std::chrono::seconds rest_time(100);
@@ -191,7 +213,7 @@ class Board{
      void write_file(int i){
           char file_name[50];
           int file_name_length;
-          file_name_length=sprintf(file_name, "images\\game_of_life_test_%05d.ppm\0",  i);
+          file_name_length=sprintf(file_name, "images/game_of_life_test_%05d.ppm",  i);
           FILE *file = fopen(file_name, "wb");      
           fprintf(file, "P6\n%d %d\n255\n", (this->width-1), (this->height-1));
                for(int y =0;y<this->height-1;y++){
@@ -248,12 +270,13 @@ class Board{
 
            }
      }
-     void add_shape(int x,int y,vector<vector<int>> shape){
-          for(vector<int> item: shape){
-
+     
+     void add_shape(int x,int y,Shape &shape){
+          for(vector<int> item: shape.pattern){
                this->set_pixel_and_matrixies(x+item[0],y+item[1],1);    
           }
      }
+     
      void add_glider(){
           int x=rand()%(this->width-40)+20;
           int y=rand()%(this->height-40) +20;
@@ -269,97 +292,68 @@ class Board{
                }
           }
      }
-     void set_shape(vector<vector<int>> pattern,int x,int y){
-          for(vector<int> item: pattern){
-               int safex=item[0];
-               safex+=x;
-               int safey=item[1];
-               safey+=y;
-               if(safex>this->width-1)       safex=0;
-               else if(safex+x<0)            safex=this->width-1;
-               if(safey+y>this->height-1)    safey=0;
-               else if(safey+y<0)            safey=this->height-1;
-               this->set_pixel_and_matrixies(safex,safey,1);
-          }
-     }
 };
 
 
-class Shape{
-     public:
-     vector<vector<int>> pattern;
-     int height;
-     int width;
-     string name;
-     string author;
-     Board *board_ref;
-     int id;
-     Shape(string name, string author, vector<vector<int>> pattern, Board *ref,int id){
-          this->board_ref=ref;
-          this->pattern = pattern;
-          this->height=sizeof(pattern);
-          this->width=sizeof(pattern[0]);
-          this->author = author;
-          this->name = name;
-          this->id=id;
-     }
-     equals(Shape other_shape){
-          if(this->id==other_shape.id){
-               return true;
-          }
-          return false;
-     }
-};
+
 vector<Shape> get_lexicon_shapes(Board &board_ref){
      std::ifstream json_file("game_of_life_lexicon.json");
      json lexicon;
      json_file >> lexicon;
      vector<Shape> lexicon_shapes;
      int id=1;
+     cout<< "accessing lexicon shapes" <<endl;
      for(const auto &item: lexicon.items()){
-          string name = item.value()["name"].get<std::string>();
-          string author = item.value()["author"].get<std::string>();
+          auto s = item.value();
+          cout <<s<<"is item"<<endl;
+          string name = s["name"];
+          cout<< "name" <<name<<endl;
+
           vector<vector<int>> pattern;
+          int height=0;
+          int width=0;
           for(const auto &coordinate: item.value()["pattern"].items()){
                int x = coordinate.value()["x"];
                int y = coordinate.value()["y"];
+               if(x>width)width=x;
+               if(x>width)width=x;
                vector<int> c{x,y};
                pattern.push_back(c);
           }
-          lexicon_shapes.push_back(Shape(name,author, pattern,&board_ref,id));
+          lexicon_shapes.push_back(Shape(name, pattern,&board_ref,id,height,width));
           id++;
      }
      return lexicon_shapes;
 }
-
-Shape* get_random_shape(vector<Shape>& s){
+ 
+Shape get_random_shape(vector<Shape>& s){
           int index=rand()%(sizeof(s));
-          return &(s[index]);
+          return (s[index]);
 }
-     
+   
 int main(){
      cout << "making game of life:" << endl;
      Board t;
      cout<<"board made"<<endl;
      vector<Shape> lexicon = get_lexicon_shapes(t);
-     vector<Shape> used_shapes;
+     vector<string> used_shapes;
      for(int vid_count =0;vid_count<360;vid_count++){
-          t.render(4500, vid_count);
-          t.clear();
-          for(int i=0;i<4200;i++){
-               Shape *s = get_random_shape(lexicon);
-               t.set_shape(s->pattern,rand()%(t.width-s->width),rand()%(t.height-s->height));
-               bool new_shape_is= true;
-               for (Shape os : used_shapes){
-                    if(s->equals(os)){
-                         new_shape_is=false;
-                    }
-               }
-               if(new_shape_is){
-                    used_shapes.push_back(*s);
-               }
 
+          for(int i=0;i<162;i++){
+               Shape s = get_random_shape(lexicon);
+               int maxH= t.height-s.height-10;
+               int maxW= t.width-s.width-10;
+               int x= rand()%(maxW-1);
+               int y= rand()%(maxH-1);
+               cout<<"chosen x/y: "<< x<<" : "<<  y <<" shape H:" <<s.height<<" shape W:" << s.width<<" maxw" <<t.width<<" maxh"<< t.height<<"at count :"<<i<<endl;     
+               t.add_shape(x,y,s);
+               used_shapes.push_back(s.name);
           }
+          for( string s :used_shapes){
+               cout<< "used shape: "<<s<<endl;
+          }
+          t.render(4500, vid_count, used_shapes);
+          t.clear();
      }
      cout<< "completed" <<endl;
      cout<<"closing in: ";
