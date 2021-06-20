@@ -188,8 +188,9 @@ class Board{
      }
      void render(int i, int render_number, vector<string> used_shapes){
           this->render_images(i,render_number);
-          this->render_video();
-          std::chrono::seconds rest_time(100);
+          cout<<"\nfinished image render"<<endl;
+          this->render_video(used_shapes, render_number);
+          std::chrono::seconds rest_time(5);
           std::this_thread::sleep_for(rest_time);
 
      }
@@ -223,13 +224,36 @@ class Board{
                }
           fclose(file);
      }
-     void render_video(){
+     void render_video(vector<string> used_shapes,int render_number){
           //todo - python scipt call/replace with direct command?.
           //pass arguments in etc... clean up.
-          std::string command = "python imgToVid_scale.py";
+          cout<<"starting render"<<endl;
+
+
+          std::string file_name_argument = "game_of_life"+(render_number);
+          cout<<"file_name_argument made  "<<endl;
+
+          std::string file_name_argument_python = file_name_argument+".mov";
+          cout<<"file_name_argument_python made  "<<endl;
+
+          std::string command = "python imgToVid_scale.py ";
+
+
+          cout<<"strings made"<<endl;
 
           FILE *python_render_script= popen(command.c_str(),"r");
           fscanf(python_render_script, command.c_str());
+          ofstream documentation;
+          documentation.open ("renders/"+file_name_argument+".txt");
+          documentation << "Writing this to a file.\n";
+          for(string s:used_shapes){
+               documentation<<s;
+               documentation<<endl;
+          }
+          documentation.close();
+
+
+
      }
      void set_pixel(int x, int y,int l,int c){
           if(l){
@@ -337,9 +361,7 @@ int main(){
      cout<<"board made"<<endl;
      vector<Shape> lexicon = get_lexicon_shapes(t);
      vector<string> used_shapes;
-     for(int vid_count =0;vid_count<360;vid_count++){
-
-          for(int i=0;i<162;i++){
+          for(int i=0;i<150;i++){
                Shape s = get_random_shape(lexicon);
                int maxH= t.height-s.height-10;
                int maxW= t.width-s.width-10;
@@ -352,9 +374,8 @@ int main(){
           for( string s :used_shapes){
                cout<< "used shape: "<<s<<endl;
           }
-          t.render(4500, vid_count, used_shapes);
+          t.render(400, 1, used_shapes);
           t.clear();
-     }
      cout<< "completed" <<endl;
      cout<<"closing in: ";
      cout<<"\b \b3";

@@ -2,11 +2,11 @@ from PIL import Image
 import numpy as np
 import random
 import os
-import imageio
 import subprocess
 import math
 import time
-from mod import Mod
+import sys
+command_line_arguments = sys.argv[1:];
 base_dir = os.path.realpath(".")
 print(base_dir)
 _mainDir=sorted(os.listdir('.'))
@@ -18,7 +18,7 @@ class Renderer:
           self.frameRate = frameRate
           print("board initilizing")
 
-     def renderVideo(self):
+     def renderVideo(self, fileName):
           proc = subprocess.Popen(
                [
                "ffmpeg",
@@ -26,10 +26,10 @@ class Renderer:
                "-f", "image2",
                "-s","4096x2048",
                "-i", os.path.join(base_dir,"images",'game_of_life_test_%05d.ppm'),
-                    os.path.join(base_dir, "renders",f"{time.time()}_gol.mov")
+                    os.path.join(base_dir, "renders",fileName)
           ]
           )
-
-frameRate =15;
+frameRate =15
 R =  Renderer(frameRate)
+fileName=command_line_arguments[0];
 R.renderVideo()
