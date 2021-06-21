@@ -6,7 +6,7 @@ import subprocess
 import math
 import time
 import sys
-command_line_arguments = sys.argv[1:];
+fineName = sys.argv[1];
 base_dir = os.path.realpath(".")
 print(base_dir)
 _mainDir=sorted(os.listdir('.'))
@@ -31,5 +31,4 @@ class Renderer:
           )
 frameRate =15
 R =  Renderer(frameRate)
-fileName=command_line_arguments[0];
-R.renderVideo()
+R.renderVideo(fineName)

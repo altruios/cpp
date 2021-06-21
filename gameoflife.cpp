@@ -23,8 +23,7 @@ class Shape{
      string name;
      Board *board_ref;
      int id;
-     Shape(string name, vector<vector<int>> pattern, Board *ref,int id,int height,int width){
-          this->board_ref=ref;
+     Shape(string name, vector<vector<int>> pattern, int id,int height,int width){
           this->pattern = pattern;
           this->height=height;
           this->width=width;
@@ -102,7 +101,9 @@ class Board{
      vector<vector<Cell>> matrix_B;
      vector<vector<std::array<unsigned char, 3>>>  matrix_C;
      bool current_matrix_is_a = true;
-     Board(){
+     Board(int h, int w){
+          this->height = h;
+          this->width=w;
           cout<<"board started"<<endl;
           this->matrix_A.resize (this->width);
           this->matrix_B.resize (this->width);
@@ -236,7 +237,7 @@ class Board{
           std::string file_name_argument_python = file_name_argument+".mov";
           cout<<"file_name_argument_python made  "<<endl;
 
-          std::string command = "python imgToVid_scale.py ";
+          std::string command = "python imgToVidscale.py ";
 
 
           cout<<"strings made"<<endl;
@@ -256,6 +257,7 @@ class Board{
 
      }
      void set_pixel(int x, int y,int l,int c){
+         
           if(l){
                this->matrix_C[y][x][0]=floor(100*sin((c)/M_PI*100) +105);
                this->matrix_C[y][x][1]=floor(100*tan((c*2)/M_PI*100)+155);
@@ -320,31 +322,43 @@ class Board{
 
 
 
-vector<Shape> get_lexicon_shapes(Board &board_ref){
+vector<Shape> get_lexicon_shapes(){
+     cout<< "opening file" <<endl;
+     
      std::ifstream json_file("game_of_life_lexicon.json");
+     cout<< "making json" <<endl;
+     
      json lexicon;
+     
+     cout<< "pushing data" <<endl;
      json_file >> lexicon;
+     
+     cout<< "accessing lexicon shapes" <<endl;
      vector<Shape> lexicon_shapes;
      int id=1;
-     cout<< "accessing lexicon shapes" <<endl;
+     cout<< "id ready" <<endl;
      for(const auto &item: lexicon.items()){
           auto s = item.value();
-          cout <<s<<"is item"<<endl;
           string name = s["name"];
-          cout<< "name" <<name<<endl;
-
+ 
           vector<vector<int>> pattern;
-          int height=0;
-          int width=0;
+          auto width=s["width"];
+          auto height=s["height"];
           for(const auto &coordinate: item.value()["pattern"].items()){
                int x = coordinate.value()["x"];
                int y = coordinate.value()["y"];
-               if(x>width)width=x;
-               if(x>width)width=x;
+               if (x>width)
+               {
+                    width=x;
+               };
+
+               if(y>height){
+                    height=y;
+               }
                vector<int> c{x,y};
                pattern.push_back(c);
           }
-          lexicon_shapes.push_back(Shape(name, pattern,&board_ref,id,height,width));
+          lexicon_shapes.push_back(Shape(name, pattern,id,height,width));
           id++;
      }
      return lexicon_shapes;
@@ -357,9 +371,9 @@ Shape get_random_shape(vector<Shape>& s){
    
 int main(){
      cout << "making game of life:" << endl;
-     Board t;
-     cout<<"board made"<<endl;
-     vector<Shape> lexicon = get_lexicon_shapes(t);
+     Board t{_height,_width};
+     cout<<"ending"<<endl;
+     vector<Shape> lexicon = get_lexicon_shapes();
      vector<string> used_shapes;
           for(int i=0;i<150;i++){
                Shape s = get_random_shape(lexicon);
@@ -367,7 +381,6 @@ int main(){
                int maxW= t.width-s.width-10;
                int x= rand()%(maxW-1);
                int y= rand()%(maxH-1);
-               cout<<"chosen x/y: "<< x<<" : "<<  y <<" shape H:" <<s.height<<" shape W:" << s.width<<" maxw" <<t.width<<" maxh"<< t.height<<"at count :"<<i<<endl;     
                t.add_shape(x,y,s);
                used_shapes.push_back(s.name);
           }
