@@ -7,13 +7,22 @@
 #include <thread>
 # define M_PI           3.14159265358979323846  /* pi */
 #include "json.hpp"
-
+#include <iomanip>
 // for convenience
 using json = nlohmann::json;
 using namespace std; 
-constexpr int _height=540;
-constexpr int _width =960;
-constexpr int _scale = 4;
+constexpr int _height=432;
+constexpr int _width =768;
+constexpr int _scale = 5;
+constexpr int _renders= 280;
+          struct Thread_data{
+               int render_number;
+               vector<string> used_shapes;
+               Thread_data(int rn, vector<string> us){
+                    used_shapes=us;
+                    render_number=rn;
+               }
+          };
 class Board;
 class Shape{
      public:
@@ -21,13 +30,17 @@ class Shape{
      int height;
      int width;
      string name;
+     string author;
+     string year;
      Board *board_ref;
      int id;
-     Shape(string name, vector<vector<int>> pattern, int id,int height,int width){
+     Shape(string name, vector<vector<int>> pattern, int id,int height,int width,string author, string year){
           this->pattern = pattern;
           this->height=height;
           this->width=width;
           this->name = name;
+          this->author=author;
+          this->year = year;
           this->id=id;
      }
      bool equals(Shape other_shape){
@@ -44,6 +57,8 @@ class Cell{
           int y;
           int c=1;
           Cell* neighbors[8];
+          double init_frequency= 40.0;
+          double frequency= 40.0;
           Cell(int _x,int _y){
                this->x=_x;
                this->y=_y;
@@ -84,6 +99,15 @@ class Cell{
                     this->c=1;
                }
           }
+          void increase_frequency(double amount){
+               this->frequency = double(max(300.0, (double(this->frequency))+amount));
+          }
+          void reduce_frequency(double amount){
+               this->frequency = double(min(30.0, (double(this->frequency))-amount));
+          }
+          void reset_frequency(){
+               this->frequency=init_frequency;
+          }
           int game_of_life(){
                int n = this->get_n();
                int l = this->get_life();
@@ -97,6 +121,7 @@ class Board{
      int height=_height;
      int width=_width;
      int scale=_scale;
+     bool has_started_playing = false;
      vector<vector<Cell>> matrix_A;
      vector<vector<Cell>> matrix_B;
      vector<vector<std::array<unsigned char, 3>>>  matrix_C;
@@ -104,6 +129,7 @@ class Board{
      Board(int h, int w){
           this->height = h;
           this->width=w;
+
           cout<<"board started"<<endl;
           this->matrix_A.resize (this->width);
           this->matrix_B.resize (this->width);
@@ -182,7 +208,18 @@ class Board{
                     int c = (*current_matrix)[y][x].get_life_count();
                     (*next_matrix)[y][x].set_life(l);
                     (*next_matrix)[y][x].set_color(c);
-                    this->set_pixel(x,y,l,c);
+                 
+                    if(l){
+                         (*next_matrix)[y][x].increase_frequency(c);
+                    }else{
+                         (*next_matrix)[y][x].reduce_frequency(1);
+
+                    }
+                                        
+
+                    double freq = (*current_matrix)[y][x].frequency;
+
+                    this->set_pixel(x,y,l,c,freq);
                }    
           }
           this->flip_matrix();
@@ -190,9 +227,25 @@ class Board{
      void render(int i, int render_number, vector<string> used_shapes){
           this->render_images(i,render_number);
           cout<<"\nfinished image render"<<endl;
-          this->render_video(used_shapes, render_number);
-          std::chrono::seconds rest_time(5);
-          std::this_thread::sleep_for(rest_time);
+
+          Thread_data td(render_number,used_shapes);
+          pthread_t thread1;
+          pthread_t thread2;
+         // int rc = pthread_create(&thread1, NULL,  &this->render_video,(void *)&td);          
+         // int rc2 = pthread_create(&thread2, NULL, &this->play_start, NULL);
+          
+          this->render_video(used_shapes,render_number);
+         // this->play_start();
+          //std::chrono::seconds rest_time(270);
+         // std::this_thread::sleep_for(rest_time);
+
+     }
+     void play_start(){
+          string command="ffplay -fs -i ./images/game_of_life_test_%05d.ppm -vf scale=3840:-1:flags=neighbor ";// 
+
+          FILE *open_ffmpeg_play_script= popen(command.c_str(),"r");
+          fscanf(open_ffmpeg_play_script, command.c_str());
+          //pthread_exit(NULL);
 
      }
      void render_images(int i, int render_number){
@@ -200,22 +253,35 @@ class Board{
           string function_name = "render_images";
           for(int file_count =0;file_count<render_count;file_count++){
                auto start = std::chrono::high_resolution_clock::now();
-               this->write_file(file_count);
+               this->write_file(file_count); //there can be only one;
                this->step();
-
                auto stop = std::chrono::high_resolution_clock::now();
                auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
                auto count_left= render_count-file_count;
                long estimation  = (duration.count()*count_left)/1000;
-
-
-               cout<<function_name << file_count<<"of:"<<render_count<<"  which took: "<<duration.count() <<"  eta:"<<estimation<< "to finish video "<< render_number<<"\r";
+               cout<<function_name <<setfill('0') <<setw(5) << file_count<<"of:"<<setfill('0') <<setw(5) <<render_count<<"  which took: "<<setfill('0') <<setw(5) << duration.count() <<"  eta:"<<setfill('0') <<setw(5) << estimation<< "to finish video "<< setfill('0') <<setw(5) << render_number<<"\r";
           }
+     }
+
+     void write_file_to_scale(int i){
+          char file_name[50];
+          int file_name_length;
+          file_name_length=sprintf(file_name, "images/game_of_life_test_%05d.ppm",  i);
+          FILE *file = fopen(file_name, "wb");      
+          fprintf(file, "P6\n%d %d\n255\n", (this->width-1)*(this->scale), (this->height-1)*(this->scale));
+               for(int y =0;y<this->height-1;y++){
+                    for(int i=0;i<this->scale;i++){
+                    for(int x =0;x<this->width-1;x++){
+                         for(int j=0;j<this->scale;j++){
+                         fwrite(&this->matrix_C[y][x],1,3, file);
+                    }}}
+               }
+          fclose(file);
      }
      void write_file(int i){
           char file_name[50];
           int file_name_length;
-          file_name_length=sprintf(file_name, "images/game_of_life_test_%05d.ppm",  i);
+          file_name_length = sprintf(file_name, "images/game_of_life_test_%05d.ppm",  i);
           FILE *file = fopen(file_name, "wb");      
           fprintf(file, "P6\n%d %d\n255\n", (this->width-1), (this->height-1));
                for(int y =0;y<this->height-1;y++){
@@ -226,60 +292,69 @@ class Board{
           fclose(file);
      }
      void render_video(vector<string> used_shapes,int render_number){
-          //todo - python scipt call/replace with direct command?.
-          //pass arguments in etc... clean up.
           cout<<"starting render"<<endl;
-
-
-          std::string file_name_argument = "game_of_life"+(render_number);
-          cout<<"file_name_argument made  "<<endl;
-
-          std::string file_name_argument_python = file_name_argument+".mov";
-          cout<<"file_name_argument_python made  "<<endl;
-
-          std::string command = "python imgToVidscale.py ";
-
-
-          cout<<"strings made"<<endl;
+          
+          string command = "ffmpeg -r 15 -f image2 -i images/game_of_life_test_%05d.ppm -vf scale=3840:-1:flags=neighbor renders/game_of_life"+string( 5, '0').append(to_string(render_number))+".mov";
+          char documentation_path[50];
+          int doc = sprintf(documentation_path, "renders/game_of_life%05d.txt", render_number);
 
           FILE *python_render_script= popen(command.c_str(),"r");
           fscanf(python_render_script, command.c_str());
+
           ofstream documentation;
-          documentation.open ("renders/"+file_name_argument+".txt");
-          documentation << "Writing this to a file.\n";
+          documentation.open (documentation_path);
+
+          ifstream description;
+          description.open("description.txt");
+          if(!documentation.is_open()){
+               cout<<endl<<endl<<endl<<"document not open?"<<endl<<endl;
+          }
+          if(!description.is_open()){
+               cout<<endl<<endl<<endl<< "description did not open"<<endl<<endl;
+          }else{
+          documentation << description.rdbuf();
+          documentation << ".\n";
+          
           for(string s:used_shapes){
                documentation<<s;
                documentation<<endl;
           }
           documentation.close();
-
+          description.close(); 
+          }
+         // pthread_exit(NULL);
 
 
      }
-     void set_pixel(int x, int y,int l,int c){
-         
+     void set_pixel(int x, int y,int l,int c, double freq){
           if(l){
-               this->matrix_C[y][x][0]=floor(100*sin((c)/M_PI*100) +105);
-               this->matrix_C[y][x][1]=floor(100*tan((c*2)/M_PI*100)+155);
-               this->matrix_C[y][x][2]=floor(100*cos((c*3)/M_PI*100)+155);
-               
-               }else{  
-               this->matrix_C[y][x][0]=0;
+        
+               int amplitude=127;
+               int center =128;
+               double color_steps = 50;
+               double frequency = (2*M_PI/color_steps);
+               this->matrix_C[y][x][0]=char(sin(frequency*c+3)*amplitude+center);
+               this->matrix_C[y][x][1]=char(sin(frequency*c+1)*amplitude+center);
+               this->matrix_C[y][x][2]=char(sin(frequency*c+5)*amplitude+center);
+          }else{               
+               int death_count = 10;
+               int death_state = int(max(0, death_count - c));
+               int death_state_blue =int(max(0,death_state/2));  
+               this->matrix_C[y][x][0]=death_state;
                this->matrix_C[y][x][1]=0;
-               this->matrix_C[y][x][2]=0;
-               
+               this->matrix_C[y][x][2]=death_state_blue;
                }
      } 
      void set_random_pixel(){
           int x=rand()%(this->width-1);
           int y=rand()%(this->height-1);
-          this->set_pixel(x,y,1,1);
+          this->set_pixel(x,y,1,1,3);
           (*this->get_current_matrix())[y][x].set_life(1);
           (*this->get_next_matrix())[y][x].set_life(1);
      }
      void set_pixel_and_matrixies(int x, int y, int life){
           
-          this->set_pixel(x,y,life,1);
+          this->set_pixel(x,y,life,1,3);
           (*this->get_current_matrix())[y][x].set_life(life);
           (*this->get_next_matrix())[y][x].set_life(life);
 
@@ -287,12 +362,12 @@ class Board{
      void set_neighbors_of_XY(int x,int y){
            for(Cell* c:this->matrix_A[y][x].neighbors){
                c->set_life(1);
-               this->set_pixel(c->x,c->y,1,1);
+               this->set_pixel(c->x,c->y,1,1,3);
 
            }
           for(Cell* c:this->matrix_B[y][x].neighbors){
                c->set_life(1);
-               this->set_pixel(c->x,c->y,1,1);
+               this->set_pixel(c->x,c->y,1,1,3);
 
            }
      }
@@ -339,8 +414,13 @@ vector<Shape> get_lexicon_shapes(){
      cout<< "id ready" <<endl;
      for(const auto &item: lexicon.items()){
           auto s = item.value();
+          cout<< "created s"<<endl;
           string name = s["name"];
- 
+          string author = s["author"]!=NULL?s["author"]:"no known author?";
+          string year = s["year"]!=NULL?s["year"]:"no known year?";
+                    cout<<" : "<<year<<endl;
+
+          cout<<author<<endl;
           vector<vector<int>> pattern;
           auto width=s["width"];
           auto height=s["height"];
@@ -358,37 +438,46 @@ vector<Shape> get_lexicon_shapes(){
                vector<int> c{x,y};
                pattern.push_back(c);
           }
-          lexicon_shapes.push_back(Shape(name, pattern,id,height,width));
+          lexicon_shapes.push_back(Shape(name, pattern,id,height,width,author, year));
           id++;
      }
      return lexicon_shapes;
 }
  
 Shape get_random_shape(vector<Shape>& s){
-          int index=rand()%(sizeof(s));
+          int index=rand()*2147%((s.size()));
           return (s[index]);
 }
    
 int main(){
+     cout<< "random seed set"<<endl;
+     srand (time(NULL));
+
+
      cout << "making game of life:" << endl;
      Board t{_height,_width};
      cout<<"ending"<<endl;
      vector<Shape> lexicon = get_lexicon_shapes();
      vector<string> used_shapes;
-          for(int i=0;i<150;i++){
+     for(int render_count=0;render_count<_renders;render_count++)
+     {
+          for(int i=0;i<125;i++){
                Shape s = get_random_shape(lexicon);
                int maxH= t.height-s.height-10;
                int maxW= t.width-s.width-10;
                int x= rand()%(maxW-1);
                int y= rand()%(maxH-1);
                t.add_shape(x,y,s);
-               used_shapes.push_back(s.name);
+               used_shapes.push_back(s.name+"  ||  "+s.author+"  ||  "+s.year);
+               cout<< "getting "<<s.name<<endl;
           }
           for( string s :used_shapes){
                cout<< "used shape: "<<s<<endl;
           }
-          t.render(400, 1, used_shapes);
+          t.render(4500, render_count, used_shapes);
           t.clear();
+          cout<<"\n rendered run"<<endl;
+     }
      cout<< "completed" <<endl;
      cout<<"closing in: ";
      cout<<"\b \b3";

@@ -1,0 +1,20 @@
+GAME OF LIFE SIMULATOR
+
+the game of life is john Conway's most well known discovery/invention.
+the rules are simple:
+//rules 1 if you are alive, and have 2 or 3 neighbors, stay alive
+//rule 2 if you are alive, and next to less than 2, die.
+//rule 3 if you are alive and next to more than 3, die.
+//rule 4 if you are dead and next to exactly 3, become alive.
+
+this was generated using c++ and some python
+
+the coloring was done such that as you grow older - you cycle through rainbow colors!
+
+the shapes were parsed from:
+https://conwaylife.com/ref/lexicon/
+
+all credit where it is due. this is a fantastic resource.
+
+
+here is a list of shapes used:

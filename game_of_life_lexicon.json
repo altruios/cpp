@@ -260,7 +260,9 @@
            "y": 14,
            "x": 11
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "August 1994"
      },
      {
        "name": "119P4H1V0",
@@ -743,7 +745,9 @@
            "y": 34,
            "x": 18
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "December 1989"
      },
      {
        "name": "1-2-3",
@@ -854,7 +858,9 @@
            "y": 6,
            "x": 9
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "August 1972"
      },
      {
        "name": "1-2-3-4",
@@ -973,7 +979,9 @@
            "y": 6,
            "x": 10
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "135-degree MWSS-to-G",
@@ -1092,7 +1100,9 @@
            "y": 3,
            "x": 10
          }
-       ]
+       ],
+       "author": "Matthias Merzenich",
+       "year": "July 2013"
      },
      {
        "name": "180-degree kickback",
@@ -1139,7 +1149,9 @@
            "y": 3,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "(23,5)c/79 Herschel climber",
@@ -1222,7 +1234,9 @@
            "y": 3,
            "x": 15
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "25P3H1V0.1",
@@ -1329,7 +1343,9 @@
            "y": 3,
            "x": 4
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "August 1989"
      },
      {
        "name": "25P3H1V0.2",
@@ -1436,7 +1452,9 @@
            "y": 6,
            "x": 7
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "1992"
      },
      {
        "name": "295P5H1V1",
@@ -2623,7 +2641,9 @@
            "y": 44,
            "x": 51
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "22 November 2000"
      },
      {
        "name": "2c/3 wire",
@@ -3578,7 +3598,9 @@
            "y": 48,
            "x": 46
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "March 1997"
      },
      {
        "name": "2-engine Cordership",
@@ -3985,13 +4007,17 @@
            "y": 22,
            "x": 48
          }
-       ]
+       ],
+       "author": "Aidan F. Pierce",
+       "year": "31 December"
      },
      {
        "name": "2-glider collision",
        "height": 32,
        "width": 25,
-       "pattern": []
+       "pattern": [],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "2-glider mess",
@@ -4038,7 +4064,9 @@
            "y": 12,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "30P5H2V0",
@@ -4165,7 +4193,9 @@
            "y": 13,
            "x": 10
          }
-       ]
+       ],
+       "author": "Paul Tooke",
+       "year": "7 December 2000"
      },
      {
        "name": "31c/240 Herschel-pair climber",
@@ -4328,7 +4358,9 @@
            "y": 55,
            "x": 57
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "44P5H2V0",
@@ -4511,7 +4543,9 @@
            "y": 11,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "23 July 1991"
      },
      {
        "name": "45-degree MWSS-to-G",
@@ -4818,7 +4852,9 @@
            "y": 23,
            "x": 25
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "4-8-12 diamond",
@@ -4969,7 +5005,9 @@
            "y": 8,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "4 boats",
@@ -5056,7 +5094,9 @@
            "y": 5,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "4g-to-5g reaction",
@@ -5143,7 +5183,9 @@
            "y": 45,
            "x": 28
          }
-       ]
+       ],
+       "author": "Dieter Leithner",
+       "year": "July 1992"
      },
      {
        "name": "56P6H1V0",
@@ -5374,7 +5416,9 @@
            "y": 18,
            "x": 11
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "2009"
      },
      {
        "name": "58P5H1V1",
@@ -5613,7 +5657,9 @@
            "y": 6,
            "x": 22
          }
-       ]
+       ],
+       "author": "Matthias Merzenich",
+       "year": "5 September 2010"
      },
      {
        "name": "5c/9 wire",
@@ -7264,7 +7310,9 @@
            "y": 47,
            "x": 49
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "April 1997"
      },
      {
        "name": "60P312",
@@ -7511,7 +7559,9 @@
            "y": 22,
            "x": 41
          }
-       ]
+       ],
+       "author": "Dave Greene",
+       "year": "1 November 2004"
      },
      {
        "name": "60P5H2V0",
@@ -7758,7 +7808,9 @@
            "y": 19,
            "x": 10
          }
-       ]
+       ],
+       "author": "Tim Coe",
+       "year": "May 1996"
      },
      {
        "name": "67P5H1V1",
@@ -8033,7 +8085,9 @@
            "y": 18,
            "x": 19
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "July 2006"
      },
      {
        "name": "70P5H2V0",
@@ -8320,7 +8374,9 @@
            "y": 14,
            "x": 15
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "5 December 1992"
      },
      {
        "name": "7x9 eater",
@@ -8475,7 +8531,9 @@
            "y": 12,
            "x": 17
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "86P5H1V1",
@@ -8826,7 +8884,9 @@
            "y": 15,
            "x": 22
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "January 8, 2005"
      },
      {
        "name": "92P156",
@@ -9201,7 +9261,9 @@
            "y": 22,
            "x": 41
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "October 31, 2004"
      },
      {
        "name": "Achim's p144 ",
@@ -9376,7 +9438,9 @@
            "y": 28,
            "x": 18
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "July 1994"
      },
      {
        "name": "Achim's p16 ",
@@ -9511,7 +9575,9 @@
            "y": 6,
            "x": 12
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "July 1994"
      },
      {
        "name": "Achim's p4 ",
@@ -9678,7 +9744,9 @@
            "y": 9,
            "x": 8
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1976"
      },
      {
        "name": "Achim's p8 ",
@@ -9757,7 +9825,9 @@
            "y": 8,
            "x": 8
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "July 1994"
      },
      {
        "name": "acorn",
@@ -9792,7 +9862,9 @@
            "y": 7,
            "x": 2
          }
-       ]
+       ],
+       "author": "Charles Corderman",
+       "year": "unknown year"
      },
      {
        "name": "A for all",
@@ -9911,7 +9983,9 @@
            "y": 6,
            "x": 9
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "March 1993"
      },
      {
        "name": "against the grain",
@@ -13278,7 +13352,9 @@
            "y": 34,
            "x": 52
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "April 2006"
      },
      {
        "name": "aircraft carrier",
@@ -13309,7 +13385,9 @@
            "y": 4,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "airforce",
@@ -13484,7 +13562,9 @@
            "y": 7,
            "x": 14
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1972"
      },
      {
        "name": "AK47 reaction",
@@ -13583,7 +13663,9 @@
            "y": 10,
            "x": 11
          }
-       ]
+       ],
+       "author": "Rich Schroeppel ",
+       "year": "unknown year"
      },
      {
        "name": "AK94 gun",
@@ -14002,7 +14084,9 @@
            "y": 23,
            "x": 24
          }
-       ]
+       ],
+       "author": "Mike Playle",
+       "year": "May 2013"
      },
      {
        "name": "almost knightship",
@@ -14277,7 +14361,9 @@
            "y": 12,
            "x": 18
          }
-       ]
+       ],
+       "author": "Eugene Langvagen",
+       "year": "March 2004"
      },
      {
        "name": "almosymmetric",
@@ -14352,7 +14438,9 @@
            "y": 6,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "1971"
      },
      {
        "name": "ants",
@@ -14647,7 +14735,9 @@
            "y": 42,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "antstretcher",
@@ -15546,7 +15636,9 @@
            "y": 10,
            "x": 53
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "January 2006"
      },
      {
        "name": "anvil",
@@ -15605,7 +15697,9 @@
            "y": 7,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "ark",
@@ -15676,7 +15770,9 @@
            "y": 7,
            "x": 28
          }
-       ]
+       ],
+       "author": "Nick Gotts",
+       "year": "unknown year"
      },
      {
        "name": "arm",
@@ -16139,7 +16235,9 @@
            "y": 20,
            "x": 22
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "aVerage",
@@ -16314,7 +16412,9 @@
            "y": 5,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1973"
      },
      {
        "name": "B29 ",
@@ -16457,7 +16557,9 @@
            "y": 17,
            "x": 6
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "April 2004"
      },
      {
        "name": "B-52 bomber ",
@@ -16804,7 +16906,9 @@
            "y": 38,
            "x": 20
          }
-       ]
+       ],
+       "author": "Noam Elkie",
+       "year": "March 1996"
      },
      {
        "name": "B60 ",
@@ -16911,7 +17015,9 @@
            "y": 9,
            "x": 12
          }
-       ]
+       ],
+       "author": "Michael Simkin",
+       "year": "2015"
      },
      {
        "name": "babbling brook ",
@@ -17102,7 +17208,9 @@
            "y": 9,
            "x": 9
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "August 1997"
      },
      {
        "name": "backrake",
@@ -17461,7 +17569,9 @@
            "y": 15,
            "x": 17
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "baker",
@@ -17540,7 +17650,9 @@
            "y": 2,
            "x": 13
          }
-       ]
+       ],
+       "author": "Keith McClelland",
+       "year": "unknown year"
      },
      {
        "name": "baker's dozen",
@@ -17727,7 +17839,9 @@
            "y": 23,
            "x": 10
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "August 1989"
      },
      {
        "name": "bakery",
@@ -17846,7 +17960,9 @@
            "y": 6,
            "x": 9
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "banana spark",
@@ -17885,7 +18001,9 @@
            "y": 7,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "barbershop ",
@@ -18004,7 +18122,9 @@
            "y": 7,
            "x": 15
          }
-       ]
+       ],
+       "author": "Jason Summers ",
+       "year": "1999"
      },
      {
        "name": "barge",
@@ -18035,7 +18155,9 @@
            "y": 3,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "beacon",
@@ -18066,7 +18188,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "Conway",
+       "year": "March 1970"
      },
      {
        "name": "beacon maker",
@@ -18149,7 +18273,9 @@
            "y": 3,
            "x": 14
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "beehive ",
@@ -18180,7 +18306,9 @@
            "y": 3,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "beehive and dock",
@@ -18251,7 +18379,9 @@
            "y": 6,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "beehive stopper ",
@@ -18454,7 +18584,9 @@
            "y": 14,
            "x": 27
          }
-       ]
+       ],
+       "author": "Tanner Jacobi ",
+       "year": "12 May 2015"
      },
      {
        "name": "beehive with tail",
@@ -18501,7 +18633,9 @@
            "y": 6,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Beluchenko's p37",
@@ -19004,7 +19138,9 @@
            "y": 26,
            "x": 36
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "April 14, 2009"
      },
      {
        "name": "Beluchenko's p51",
@@ -19459,7 +19595,9 @@
            "y": 22,
            "x": 36
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "February 17, 2009"
      },
      {
        "name": "bent keys",
@@ -19530,7 +19668,9 @@
            "y": 8,
            "x": 4
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "August 1989"
      },
      {
        "name": "BFx59H",
@@ -19629,7 +19769,9 @@
            "y": 1,
            "x": 13
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "July 1996"
      },
      {
        "name": "B-heptomino",
@@ -19664,7 +19806,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "B-heptomino shuttle",
@@ -19703,7 +19847,9 @@
            "y": 5,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "bi-block fuse",
@@ -20086,7 +20232,9 @@
            "y": 42,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "bi-block puffer",
@@ -21057,7 +21205,9 @@
            "y": 28,
            "x": 28
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "biclock",
@@ -21112,7 +21262,9 @@
            "y": 5,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "big glider",
@@ -21391,7 +21543,9 @@
            "y": 14,
            "x": 17
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "December 1989"
      },
      {
        "name": "big S",
@@ -21454,7 +21608,9 @@
            "y": 3,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "bi-loaf",
@@ -21517,7 +21673,9 @@
            "y": 6,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "bi-loaf variant 1",
@@ -21580,7 +21738,9 @@
            "y": 5,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pure glider generator",
@@ -21635,7 +21795,9 @@
            "y": 2,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "bipole",
@@ -21674,7 +21836,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "bi-pond",
@@ -21745,7 +21909,9 @@
            "y": 6,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "bistable switch ",
@@ -21964,7 +22130,9 @@
            "y": 31,
            "x": 47
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "1994"
      },
      {
        "name": "biting off more than they can chew",
@@ -22075,7 +22243,9 @@
            "y": 12,
            "x": 11
          }
-       ]
+       ],
+       "author": "Peter Raynham",
+       "year": "July 1972"
      },
      {
        "name": "blinker",
@@ -22094,7 +22264,9 @@
            "y": 3,
            "x": 0
          }
-       ]
+       ],
+       "author": "Conway",
+       "year": "March 1970"
      },
      {
        "name": "blinker fuse",
@@ -22341,7 +22513,9 @@
            "y": 53,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "blinker puffer ",
@@ -22496,7 +22670,9 @@
            "y": 8,
            "x": 17
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "x66",
@@ -22819,7 +22995,9 @@
            "y": 16,
            "x": 24
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "1992"
      },
      {
        "name": "blinker pull",
@@ -22858,7 +23036,9 @@
            "y": 3,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "blinkers bit pole",
@@ -22925,7 +23105,9 @@
            "y": 6,
            "x": 5
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "June 1977"
      },
      {
        "name": "blinker ship",
@@ -23184,7 +23366,9 @@
            "y": 14,
            "x": 14
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "block",
@@ -23207,7 +23391,9 @@
            "y": 2,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "honey farm destruction",
@@ -23270,7 +23456,9 @@
            "y": 2,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "blockade",
@@ -23341,7 +23529,9 @@
            "y": 23,
            "x": 9
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "block and dock",
@@ -23404,7 +23594,9 @@
            "y": 6,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "block and glider",
@@ -23435,7 +23627,9 @@
            "y": 4,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "blocker",
@@ -23502,7 +23696,9 @@
            "y": 6,
            "x": 4
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "unknown year"
      },
      {
        "name": "block on table",
@@ -23549,7 +23745,9 @@
            "y": 4,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "block pull",
@@ -23592,7 +23790,9 @@
            "y": 2,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "block pusher",
@@ -23675,7 +23875,9 @@
            "y": 7,
            "x": 15
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "blom",
@@ -23734,7 +23936,9 @@
            "y": 11,
            "x": 4
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "July 2002"
      },
      {
        "name": "blonker ",
@@ -23821,7 +24025,9 @@
            "y": 11,
            "x": 7
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "April 2004"
      },
      {
        "name": "BNE14T30",
@@ -23964,7 +24170,9 @@
            "y": 2,
            "x": 21
          }
-       ]
+       ],
+       "author": "Tanner Jacobi",
+       "year": "26 May 2016"
      },
      {
        "name": "boat",
@@ -23991,7 +24199,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "boat-bit",
@@ -24102,7 +24312,9 @@
            "y": 3,
            "x": 23
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "a method of reading the bit while setting it to 0.",
@@ -24269,7 +24481,9 @@
            "y": 57,
            "x": 20
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "boat maker",
@@ -24368,7 +24582,9 @@
            "y": 5,
            "x": 16
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "boat-tie",
@@ -24415,7 +24631,9 @@
            "y": 5,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "boojum reflector",
@@ -24682,7 +24900,9 @@
            "y": 30,
            "x": 31
          }
-       ]
+       ],
+       "author": "Dave Greene's",
+       "year": "April 2001"
      },
      {
        "name": "bookend",
@@ -24717,7 +24937,9 @@
            "y": 3,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "bookends",
@@ -24780,7 +25002,9 @@
            "y": 6,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "boss",
@@ -24955,7 +25179,9 @@
            "y": 6,
            "x": 13
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1972"
      },
      {
        "name": "bottle",
@@ -25282,7 +25508,9 @@
            "y": 14,
            "x": 17
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "August 1994"
      },
      {
        "name": "brain ",
@@ -25569,7 +25797,9 @@
            "y": 16,
            "x": 10
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "May 1992"
      },
      {
        "name": "branching spaceship",
@@ -27124,7 +27354,9 @@
            "y": 20,
            "x": 51
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "BRx46B",
@@ -27215,7 +27447,9 @@
            "y": 1,
            "x": 9
          }
-       ]
+       ],
+       "author": "Michael Simkin",
+       "year": "25 April 2016"
      },
      {
        "name": "BTS",
@@ -27298,7 +27532,9 @@
            "y": 2,
            "x": 7
          }
-       ]
+       ],
+       "author": "Mike Playle's",
+       "year": "2015"
      },
      {
        "name": "buckaroo",
@@ -27417,7 +27653,9 @@
            "y": 3,
            "x": 11
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1970"
      },
      {
        "name": "bullet heptomino",
@@ -27452,7 +27690,9 @@
            "y": 3,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "bun",
@@ -27487,7 +27727,9 @@
            "y": 4,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "bunnies ",
@@ -27530,7 +27772,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "unknown year"
      },
      {
        "name": "burloaferimeter",
@@ -27649,7 +27893,9 @@
            "y": 6,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1972"
      },
      {
        "name": "butterfly",
@@ -27688,7 +27934,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Bx125",
@@ -27883,7 +28131,9 @@
            "y": 27,
            "x": 26
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "November 1998"
      },
      {
        "name": "Bx222",
@@ -28250,7 +28500,9 @@
            "y": 26,
            "x": 35
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "October 1998"
      },
      {
        "name": "by flops",
@@ -28309,7 +28561,9 @@
            "y": 4,
            "x": 6
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "unknown year"
      },
      {
        "name": "c/6 spaceship",
@@ -29412,7 +29666,9 @@
            "y": 53,
            "x": 18
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Callahan G-to-H",
@@ -29659,7 +29915,9 @@
            "y": 14,
            "x": 22
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "November 1998"
      },
      {
        "name": "Canada goose",
@@ -29810,7 +30068,9 @@
            "y": 4,
            "x": 11
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "January 1999"
      },
      {
        "name": "candelabra ",
@@ -29929,7 +30189,9 @@
            "y": 11,
            "x": 5
          }
-       ]
+       ],
+       "author": "Charles Trawick",
+       "year": "unknown year"
      },
      {
        "name": "candlefrobra",
@@ -30000,7 +30262,9 @@
            "y": 7,
            "x": 4
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "November 1984"
      },
      {
        "name": "pair of candlefrobra",
@@ -30187,7 +30451,9 @@
            "y": 13,
            "x": 13
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "canoe ",
@@ -30226,7 +30492,9 @@
            "y": 2,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "cap",
@@ -30265,7 +30533,9 @@
            "y": 4,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "carnival shuttle",
@@ -30504,7 +30774,9 @@
            "y": 38,
            "x": 6
          }
-       ]
+       ],
+       "author": "Robert Wainwright ",
+       "year": "September 1984"
      },
      {
        "name": "catch and throw",
@@ -30787,7 +31059,9 @@
            "y": 35,
            "x": 17
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "caterer ",
@@ -30842,7 +31116,9 @@
            "y": 3,
            "x": 5
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "August 1989"
      },
      {
        "name": "Caterpillar",
@@ -30893,7 +31169,9 @@
            "y": 16,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "a different Caterpillar",
@@ -30976,7 +31254,9 @@
            "y": 23,
            "x": 14
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "cauldron",
@@ -31111,7 +31391,9 @@
            "y": 8,
            "x": 12
          }
-       ]
+       ],
+       "author": "Don Woods",
+       "year": "1971 "
      },
      {
        "name": "CC semi-cenark",
@@ -31406,7 +31688,9 @@
            "y": 21,
            "x": 25
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "CC semi-Snark",
@@ -31577,7 +31861,9 @@
            "y": 16,
            "x": 18
          }
-       ]
+       ],
+       "author": "Sergei Petrov",
+       "year": " 1 July 2013"
      },
      {
        "name": "centinal",
@@ -31864,7 +32150,9 @@
            "y": 52,
            "x": 16
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "unknown year"
      },
      {
        "name": "century",
@@ -31895,7 +32183,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "century eater",
@@ -32062,7 +32352,9 @@
            "y": 14,
            "x": 42
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "century-to-glider converter",
@@ -32157,7 +32449,9 @@
            "y": 24,
            "x": 16
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "chemist ",
@@ -32356,7 +32650,9 @@
            "y": 8,
            "x": 12
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "C-heptomino ",
@@ -32391,7 +32687,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": " "
      },
      {
        "name": "Cheshire cat",
@@ -32470,7 +32768,9 @@
            "y": 5,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "chicken wire",
@@ -32493,7 +32793,9 @@
            "y": 4,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "chicken-wire variant 1",
@@ -32556,7 +32858,9 @@
            "y": 14,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "cis-beacon on anvil ",
@@ -32639,7 +32943,9 @@
            "y": 7,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "cis-beacon on table",
@@ -32694,7 +33000,9 @@
            "y": 4,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "cis-boat with tail",
@@ -32737,7 +33045,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "cis fuse with two tails",
@@ -32792,7 +33102,9 @@
            "y": 4,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "cis mirrored R-bee",
@@ -32855,7 +33167,9 @@
            "y": 6,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "clearance",
@@ -32950,7 +33264,9 @@
            "y": 6,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "clock",
@@ -32981,7 +33297,9 @@
            "y": 2,
            "x": 3
          }
-       ]
+       ],
+       "author": "Simon Norton",
+       "year": "May 1970"
      },
      {
        "name": "F171",
@@ -33304,7 +33622,9 @@
            "y": 1,
            "x": 37
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "clock II",
@@ -33451,7 +33771,9 @@
            "y": 6,
            "x": 11
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "clock insertion",
@@ -33802,7 +34124,9 @@
            "y": 46,
            "x": 56
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Coe ship",
@@ -33921,7 +34245,9 @@
            "y": 9,
            "x": 8
          }
-       ]
+       ],
+       "author": "Tim Coe",
+       "year": "October 1995"
      },
      {
        "name": "Coe's p8 ",
@@ -33996,7 +34322,9 @@
            "y": 12,
            "x": 5
          }
-       ]
+       ],
+       "author": "Tim Coe",
+       "year": "August 1997"
      },
      {
        "name": "colour of a glider",
@@ -34023,7 +34351,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "component ",
@@ -34382,7 +34712,9 @@
            "y": 25,
            "x": 17
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "conduit",
@@ -34457,7 +34789,9 @@
            "y": 11,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "confused eaters",
@@ -34544,7 +34878,9 @@
            "y": 11,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1973"
      },
      {
        "name": "converter",
@@ -34711,7 +35047,9 @@
            "y": 15,
            "x": 11
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "The earliest and simplest stable converters known",
@@ -34934,7 +35272,9 @@
            "y": 56,
            "x": 9
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "copperhead ",
@@ -35061,7 +35401,9 @@
            "y": 4,
            "x": 11
          }
-       ]
+       ],
+       "author": "conwaylife.com",
+       "year": "5 March 2016"
      },
      {
        "name": "Cordership",
@@ -35952,7 +36294,9 @@
            "y": 13,
            "x": 57
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "April 1991"
      },
      {
        "name": "cousins",
@@ -36087,7 +36431,9 @@
            "y": 8,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "cover",
@@ -36126,7 +36472,9 @@
            "y": 2,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "cow",
@@ -36821,7 +37169,9 @@
            "y": 55,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "CP semi-cenark",
@@ -37088,7 +37438,9 @@
            "y": 18,
            "x": 22
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "CP semi-Snark ",
@@ -37407,7 +37759,9 @@
            "y": 27,
            "x": 23
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "crane",
@@ -37634,7 +37988,9 @@
            "y": 20,
            "x": 25
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "September 2005"
      },
      {
        "name": "cross",
@@ -37753,7 +38109,9 @@
            "y": 6,
            "x": 7
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "October 1989"
      },
      {
        "name": "next smallest family member of p3 oscillators",
@@ -38016,7 +38374,9 @@
            "y": 11,
            "x": 12
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "crowd",
@@ -38207,7 +38567,9 @@
            "y": 3,
            "x": 13
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "January 1973"
      },
      {
        "name": "crown",
@@ -38506,7 +38868,9 @@
            "y": 19,
            "x": 14
          }
-       ]
+       ],
+       "author": "Noam Elkies",
+       "year": "January 1995"
      },
      {
        "name": "crystal",
@@ -38549,7 +38913,9 @@
            "y": 8,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "cuphook",
@@ -38628,7 +38994,9 @@
            "y": 9,
            "x": 7
          }
-       ]
+       ],
+       "author": "Rich Schroeppel",
+       "year": "October 1970"
      },
      {
        "name": "cuphook variant 1",
@@ -38707,7 +39075,9 @@
            "y": 4,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "dart",
@@ -38850,7 +39220,9 @@
            "y": 14,
            "x": 9
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "May 1992"
      },
      {
        "name": "dead spark coil",
@@ -38929,7 +39301,9 @@
            "y": 7,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "demultiplexer",
@@ -39116,7 +39490,9 @@
            "y": 2,
            "x": 22
          }
-       ]
+       ],
+       "author": "Brice Due",
+       "year": "August 2006"
      },
      {
        "name": "diamond ring",
@@ -39283,7 +39659,9 @@
            "y": 7,
            "x": 12
          }
-       ]
+       ],
+       "author": " Dave Buckingham",
+       "year": "1972"
      },
      {
        "name": "diehard",
@@ -39318,7 +39696,9 @@
            "y": 8,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "dinner table",
@@ -39461,7 +39841,9 @@
            "y": 12,
            "x": 12
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "1972"
      },
      {
        "name": "diuresis",
@@ -39952,7 +40334,9 @@
            "y": 25,
            "x": 24
          }
-       ]
+       ],
+       "author": "David Eppstein",
+       "year": "October 1998"
      },
      {
        "name": "dock ",
@@ -39999,7 +40383,9 @@
            "y": 6,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "do-see-do ",
@@ -40270,7 +40656,9 @@
            "y": 29,
            "x": 36
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "1996"
      },
      {
        "name": "double-barrelled",
@@ -40421,7 +40809,9 @@
            "y": 33,
            "x": 14
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "double-barrelled reaction ",
@@ -40516,7 +40906,9 @@
            "y": 15,
            "x": 6
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "October 1996"
      },
      {
        "name": "double caterer",
@@ -40783,7 +41175,9 @@
            "y": 19,
            "x": 11
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "October 1989"
      },
      {
        "name": "double ewe",
@@ -41006,7 +41400,9 @@
            "y": 14,
            "x": 19
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "September 1971"
      },
      {
        "name": "dove",
@@ -41049,7 +41445,9 @@
            "y": 5,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "2015"
      },
      {
        "name": "dragon",
@@ -41616,7 +42014,9 @@
            "y": 30,
            "x": 13
          }
-       ]
+       ],
+       "author": "Paul Tooke",
+       "year": "April 2000"
      },
      {
        "name": "duoplet",
@@ -41751,7 +42151,9 @@
            "y": 15,
            "x": 22
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "eater",
@@ -41990,7 +42392,9 @@
            "y": 10,
            "x": 18
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "1998"
      },
      {
        "name": "eater1",
@@ -42025,7 +42429,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "eater",
@@ -42156,7 +42562,9 @@
            "y": 23,
            "x": 7
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "1971"
      },
      {
        "name": "eater2",
@@ -42239,7 +42647,9 @@
            "y": 3,
            "x": 6
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1970"
      },
      {
        "name": "eater2 variant",
@@ -42402,7 +42812,9 @@
            "y": 16,
            "x": 21
          }
-       ]
+       ],
+       "author": "Stephen Silver",
+       "year": "May 1998"
      },
      {
        "name": "eater3",
@@ -42533,7 +42945,9 @@
            "y": 9,
            "x": 11
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "eater4",
@@ -42700,7 +43114,9 @@
            "y": 12,
            "x": 13
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1971"
      },
      {
        "name": "eater5",
@@ -43043,7 +43459,9 @@
            "y": 32,
            "x": 16
          }
-       ]
+       ],
+       "author": "Bellman",
+       "year": "unknown year"
      },
      {
        "name": "eater/block frob",
@@ -43130,7 +43548,9 @@
            "y": 1,
            "x": 9
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1971"
      },
      {
        "name": "eater plug",
@@ -43193,7 +43613,9 @@
            "y": 2,
            "x": 7
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "February 1973"
      },
      {
        "name": "ecologist",
@@ -43484,7 +43906,9 @@
            "y": 5,
            "x": 17
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "edge-repair spaceship",
@@ -43695,7 +44119,9 @@
            "y": 30,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "edge-repair spaceship deleting a Herschel",
@@ -43834,7 +44260,9 @@
            "y": 14,
            "x": 6
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "1992"
      },
      {
        "name": "edge-repair c/4 spaceship",
@@ -44093,7 +44521,9 @@
            "y": 3,
            "x": 17
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "October 2000"
      },
      {
        "name": "p46 edge shooter",
@@ -44420,7 +44850,9 @@
            "y": 40,
            "x": 31
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "June 1994"
      },
      {
        "name": "E-heptomino",
@@ -44455,7 +44887,9 @@
            "y": 3,
            "x": 2
          }
-       ]
+       ],
+       "author": "Conway",
+       "year": "unknown year"
      },
      {
        "name": "electric fence",
@@ -45250,7 +45684,9 @@
            "y": 40,
            "x": 14
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "February 1993"
      },
      {
        "name": "elevener",
@@ -45301,7 +45737,9 @@
            "y": 6,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Elkies' p5",
@@ -45388,7 +45826,9 @@
            "y": 7,
            "x": 7
          }
-       ]
+       ],
+       "author": "Noam Elkies",
+       "year": "1997"
      },
      {
        "name": "en retard",
@@ -45555,7 +45995,9 @@
            "y": 9,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "August 1972"
      },
      {
        "name": "Enterprise",
@@ -45870,7 +46312,9 @@
            "y": 14,
            "x": 20
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "March 1993"
      },
      {
        "name": "Eureka",
@@ -45989,7 +46433,9 @@
            "y": 17,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "ugust 1980"
      },
      {
        "name": "extremely impressive",
@@ -46116,7 +46562,9 @@
            "y": 7,
            "x": 9
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "August 1976"
      },
      {
        "name": "F116 Herschel 2",
@@ -46275,7 +46723,9 @@
            "y": 23,
            "x": 27
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "February 1997"
      },
      {
        "name": "F117 Herschel conduits",
@@ -46458,7 +46908,9 @@
            "y": 20,
            "x": 21
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "July 1996"
      },
      {
        "name": "F166 Herschel conduits",
@@ -46749,7 +47201,9 @@
            "y": 31,
            "x": 30
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "May 1997"
      },
      {
        "name": "F171 Herschel conduits",
@@ -46948,7 +47402,9 @@
            "y": 9,
            "x": 34
          }
-       ]
+       ],
+       "author": "Brice Due",
+       "year": "August 2006"
      },
      {
        "name": "p144 gun",
@@ -47335,7 +47791,9 @@
            "y": 26,
            "x": 23
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Fast Forward Force Field",
@@ -47450,7 +47908,9 @@
            "y": 15,
            "x": 6
          }
-       ]
+       ],
+       "author": "Dieter Leithner",
+       "year": "May 1994"
      },
      {
        "name": "F-heptomino",
@@ -47485,7 +47945,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "Conway",
+       "year": "unknown year"
      },
      {
        "name": "domino sparker",
@@ -47564,7 +48026,9 @@
            "y": 6,
            "x": 5
          }
-       ]
+       ],
+       "author": "Simon Norton",
+       "year": "1970"
      },
      {
        "name": "p4 oscillator",
@@ -48139,7 +48603,9 @@
            "y": 21,
            "x": 24
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "November 1994"
      },
      {
        "name": "filter stream",
@@ -48382,7 +48848,9 @@
            "y": 62,
            "x": 23
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "fireship (c/10 orthogonally, p10)",
@@ -48605,7 +49073,9 @@
            "y": 8,
            "x": 19
          }
-       ]
+       ],
+       "author": "Simon Ekström",
+       "year": "March 2016"
      },
      {
        "name": "fire-spitting",
@@ -48688,7 +49158,9 @@
            "y": 10,
            "x": 7
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "September 2003"
      },
      {
        "name": "fleet",
@@ -48791,7 +49263,9 @@
            "y": 6,
            "x": 9
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "flotilla",
@@ -49026,7 +49500,9 @@
            "y": 5,
            "x": 15
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "c/3 tagalong",
@@ -49661,7 +50137,9 @@
            "y": 33,
            "x": 19
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "April 1992"
      },
      {
        "name": "c/2 convoys",
@@ -49932,7 +50410,9 @@
            "y": 3,
            "x": 15
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "snake pit",
@@ -50035,7 +50515,9 @@
            "y": 7,
            "x": 6
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "July 1994"
      },
      {
        "name": "fountain",
@@ -50294,7 +50776,9 @@
            "y": 15,
            "x": 14
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "November 1994"
      },
      {
        "name": "fountain",
@@ -50365,7 +50849,9 @@
            "y": 7,
            "x": 12
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "November 1994"
      },
      {
        "name": "2-glider collision",
@@ -50412,7 +50898,9 @@
            "y": 7,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "fourteener",
@@ -50475,7 +50963,9 @@
            "y": 4,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p2 oscillator",
@@ -50530,7 +51020,9 @@
            "y": 7,
            "x": 6
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "July 1977"
      },
      {
        "name": "French kiss",
@@ -50609,7 +51101,9 @@
            "y": 10,
            "x": 8
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "July 1971"
      },
      {
        "name": "frog II",
@@ -50796,7 +51290,9 @@
            "y": 7,
            "x": 12
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "October 1972"
      },
      {
        "name": "p78 c/2 frothing",
@@ -51503,7 +51999,9 @@
            "y": 22,
            "x": 22
          }
-       ]
+       ],
+       "author": "Paul Tooke",
+       "year": "April 2001"
      },
      {
        "name": "fumarole",
@@ -51582,7 +52080,9 @@
            "y": 8,
            "x": 6
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "September 1989"
      },
      {
        "name": "fuse",
@@ -52137,7 +52637,9 @@
            "y": 47,
            "x": 36
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Fx119 Herschel conduits",
@@ -52272,7 +52774,9 @@
            "y": 2,
            "x": 23
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "September 1996"
      },
      {
        "name": "Fx119 inserter",
@@ -52467,7 +52971,9 @@
            "y": 30,
            "x": 23
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Fx153 Herschel conduits",
@@ -52694,7 +53200,9 @@
            "y": 20,
            "x": 22
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "February 1997"
      },
      {
        "name": "Fx158 Herschel conduits",
@@ -52993,7 +53501,9 @@
            "y": 8,
            "x": 29
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "July 1996"
      },
      {
        "name": "Fx176 Herschel conduits",
@@ -53348,7 +53858,9 @@
            "y": 26,
            "x": 37
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "October 1997"
      },
      {
        "name": "Fx77 Herschel conduits",
@@ -53623,7 +54135,9 @@
            "y": 20,
            "x": 60
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "August 1996"
      },
      {
        "name": "Herschel receiver",
@@ -53906,7 +54420,9 @@
            "y": 26,
            "x": 28
          }
-       ]
+       ],
+       "author": "Sergei Petrov",
+       "year": "December 2011"
      },
      {
        "name": "Gabriel's p138",
@@ -54089,7 +54605,9 @@
            "y": 8,
            "x": 14
          }
-       ]
+       ],
+       "author": "Gabriel Nivasch",
+       "year": "October 2002"
      },
      {
        "name": "13 × 12 Garden of Eden",
@@ -54416,7 +54934,9 @@
            "y": 11,
            "x": 11
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "June 2004"
      },
      {
        "name": "10 × 10 Garden of Eden",
@@ -54647,7 +55167,9 @@
            "y": 9,
            "x": 9
          }
-       ]
+       ],
+       "author": "Marijn Heule, Christiaan\nHartman, Kees Kwekkeboom, and Alain Noels",
+       "year": "2013"
      },
      {
        "name": "germ",
@@ -54778,7 +55300,9 @@
            "y": 9,
            "x": 9
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "September 1972"
      },
      {
        "name": "ghost Herschel",
@@ -54809,7 +55333,9 @@
            "y": 3,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "GIG",
@@ -55360,7 +55886,9 @@
            "y": 13,
            "x": 29
          }
-       ]
+       ],
+       "author": "Dieter Leithner",
+       "year": "July 1996"
      },
      {
        "name": "glasses",
@@ -55583,7 +56111,9 @@
            "y": 14,
            "x": 10
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "glider (c/4 diagonally, p4)",
@@ -55610,7 +56140,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "Richard Guy",
+       "year": "1970"
      },
      {
        "name": "glider-block cycle",
@@ -55673,7 +56205,9 @@
            "y": 7,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "30 glider duplicator",
@@ -56108,7 +56642,9 @@
            "y": 36,
            "x": 31
          }
-       ]
+       ],
+       "author": "Dieter Leithner",
+       "year": "unknown year"
      },
      {
        "name": " gliderless gun",
@@ -56607,7 +57143,9 @@
            "y": 29,
            "x": 28
          }
-       ]
+       ],
+       "author": "Matthias Merzenich",
+       "year": "2017"
      },
      {
        "name": "glider pusher",
@@ -56770,7 +57308,9 @@
            "y": 23,
            "x": 19
          }
-       ]
+       ],
+       "author": "Dieter Leithner",
+       "year": "December 1993"
      },
      {
        "name": "gliders by the dozen",
@@ -56809,7 +57349,9 @@
            "y": 5,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Spartan logic circuit",
@@ -57016,7 +57558,9 @@
            "y": 17,
            "x": 36
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "1996"
      },
      {
        "name": "3-glider synthesis",
@@ -57083,7 +57627,9 @@
            "y": 8,
            "x": 8
          }
-       ]
+       ],
+       "author": "Heinrich Koenig",
+       "year": "April 1997"
      },
      {
        "name": "glider to 2 blocks",
@@ -57202,7 +57748,9 @@
            "y": 10,
            "x": 18
          }
-       ]
+       ],
+       "author": "Sergei Petrov",
+       "year": "October 2011"
      },
      {
        "name": "glider to block",
@@ -57349,7 +57897,9 @@
            "y": 16,
            "x": 20
          }
-       ]
+       ],
+       "author": "Sergei Petrov",
+       "year": "unknown year"
      },
      {
        "name": "glider train p64",
@@ -57724,7 +58274,9 @@
            "y": 31,
            "x": 30
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "glider turner",
@@ -57919,7 +58471,9 @@
            "y": 18,
            "x": 20
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Gosper glider gun ",
@@ -58070,7 +58624,9 @@
            "y": 14,
            "x": 8
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "November 1970"
      },
      {
        "name": "gourmet",
@@ -58345,7 +58901,9 @@
            "y": 10,
            "x": 19
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "March 1978"
      },
      {
        "name": "Gray counter",
@@ -58456,7 +59014,9 @@
            "y": 7,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "great on-off",
@@ -58535,7 +59095,9 @@
            "y": 5,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "gri",
@@ -58558,7 +59120,9 @@
            "y": 3,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "grow-by-one object",
@@ -58741,7 +59305,9 @@
            "y": 9,
            "x": 14
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "September 2005"
      },
      {
        "name": "half-bakery reaction",
@@ -58900,7 +59466,9 @@
            "y": 2,
            "x": 24
          }
-       ]
+       ],
+       "author": "Ivan Fomichev",
+       "year": "May 2014"
      },
      {
        "name": "hammer",
@@ -59027,7 +59595,9 @@
            "y": 20,
            "x": 5
          }
-       ]
+       ],
+       "author": "Dieter Leithner",
+       "year": "unknown year"
      },
      {
        "name": "hammerhead c/2 spaceships",
@@ -59402,7 +59972,9 @@
            "y": 17,
            "x": 17
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "handshake",
@@ -59449,7 +60021,9 @@
            "y": 3,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "harbor",
@@ -59712,7 +60286,9 @@
            "y": 12,
            "x": 16
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "September 1978"
      },
      {
        "name": "harvester",
@@ -59823,7 +60399,9 @@
            "y": 4,
            "x": 14
          }
-       ]
+       ],
+       "author": "David Poyner",
+       "year": "unknown year"
      },
      {
        "name": "hat",
@@ -59866,7 +60444,9 @@
            "y": 5,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "1971"
      },
      {
        "name": "hebdarole",
@@ -60285,7 +60865,9 @@
            "y": 12,
            "x": 18
          }
-       ]
+       ],
+       "author": "Noam Elkies",
+       "year": "November 1997"
      },
      {
        "name": "hectic",
@@ -60588,7 +61170,9 @@
            "y": 17,
            "x": 38
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "September 1984"
      },
      {
        "name": "Heisenburp device",
@@ -60655,7 +61239,9 @@
            "y": 11,
            "x": 8
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "December 1992"
      },
      {
        "name": "helix",
@@ -61674,7 +62260,9 @@
            "y": 11,
            "x": 60
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "barberpole",
@@ -61733,7 +62321,9 @@
            "y": 10,
            "x": 9
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "B-heptomino",
@@ -61768,7 +62358,9 @@
            "y": 3,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Herschel conduits",
@@ -61783,7 +62375,9 @@
            "y": 34,
            "x": 18
          }
-       ]
+       ],
+       "author": "Dave Buckingham (DJB) and Paul Callahan (PBC)",
+       "year": "1995 and 1998"
      },
      {
        "name": "Herschel descendant",
@@ -61830,7 +62424,9 @@
            "y": 3,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Herschel great-grandparent",
@@ -61913,7 +62509,9 @@
            "y": 2,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Herschel receiver",
@@ -62152,7 +62750,9 @@
            "y": 29,
            "x": 32
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "1996"
      },
      {
        "name": "Herschel stopper",
@@ -62411,7 +63011,9 @@
            "y": 27,
            "x": 29
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "unknown year"
      },
      {
        "name": "Herschel transmitter",
@@ -62550,7 +63152,9 @@
            "y": 19,
            "x": 17
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "May 1997"
      },
      {
        "name": "Hertz oscillator",
@@ -62697,7 +63301,9 @@
            "y": 8,
            "x": 11
          }
-       ]
+       ],
+       "author": "Conway's group",
+       "year": "1970"
      },
      {
        "name": "hexapole",
@@ -62752,7 +63358,9 @@
            "y": 9,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "HFx58B",
@@ -63055,7 +63663,9 @@
            "y": 43,
            "x": 21
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "H-heptomino ",
@@ -63090,7 +63700,9 @@
            "y": 3,
            "x": 3
          }
-       ]
+       ],
+       "author": "Conway",
+       "year": "unknown year"
      },
      {
        "name": "highway robber",
@@ -63485,7 +64097,9 @@
            "y": 20,
            "x": 53
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "hivenudger",
@@ -63660,7 +64274,9 @@
            "y": 13,
            "x": 12
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "July 1992"
      },
      {
        "name": "line puffer",
@@ -64319,7 +64935,9 @@
            "y": 30,
            "x": 26
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "honey bit",
@@ -64430,7 +65048,9 @@
            "y": 11,
            "x": 16
          }
-       ]
+       ],
+       "author": "Brice Due",
+       "year": "2006"
      },
      {
        "name": "honey bit",
@@ -64537,7 +65157,9 @@
            "y": 13,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "honeycomb",
@@ -64592,7 +65214,9 @@
            "y": 4,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "honey farm",
@@ -64695,7 +65319,9 @@
            "y": 7,
            "x": 12
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "hook with tail",
@@ -64734,7 +65360,9 @@
            "y": 5,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "houndstooth agar",
@@ -64773,7 +65401,9 @@
            "y": 3,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "house",
@@ -64816,7 +65446,9 @@
            "y": 5,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "H-to-MWSS",
@@ -65159,7 +65791,9 @@
            "y": 40,
            "x": 43
          }
-       ]
+       ],
+       "author": "Tanner Jacobi",
+       "year": "October 2015"
      },
      {
        "name": "hustler",
@@ -65286,7 +65920,9 @@
            "y": 6,
            "x": 11
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "June 1971"
      },
      {
        "name": "hustler II",
@@ -65461,7 +66097,9 @@
            "y": 12,
            "x": 12
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "HW emulator",
@@ -65604,7 +66242,9 @@
            "y": 15,
            "x": 6
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "June 1980"
      },
      {
        "name": "HWSS",
@@ -65663,7 +66303,9 @@
            "y": 6,
            "x": 4
          }
-       ]
+       ],
+       "author": "Conway",
+       "year": "1970"
      },
      {
        "name": "HWSS",
@@ -65730,7 +66372,9 @@
            "y": 7,
            "x": 8
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "unknown year"
      },
      {
        "name": "HW volcano p5",
@@ -66409,7 +67053,9 @@
            "y": 29,
            "x": 18
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "February 1995"
      },
      {
        "name": "I-heptomino",
@@ -66444,7 +67090,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "Conway",
+       "year": "unknown year"
      },
      {
        "name": "infinite growth",
@@ -66491,7 +67139,9 @@
            "y": 3,
            "x": 5
          }
-       ]
+       ],
+       "author": " Paul Callahan",
+       "year": "November 1997"
      },
      {
        "name": "5×5 pattern with infinite growth",
@@ -66550,7 +67200,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "Callahan",
+       "year": "unknown year"
      },
      {
        "name": "39×1 pattern",
@@ -66669,7 +67321,9 @@
            "y": 39,
            "x": 0
          }
-       ]
+       ],
+       "author": "Paul Callahan ",
+       "year": "October 1998"
      },
      {
        "name": "injector",
@@ -66796,7 +67450,9 @@
            "y": 6,
            "x": 20
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "unknown year"
      },
      {
        "name": "inline inverter",
@@ -66995,7 +67651,9 @@
            "y": 14,
            "x": 12
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "integral sign",
@@ -67038,7 +67696,9 @@
            "y": 2,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "interchange",
@@ -67117,7 +67777,9 @@
            "y": 12,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Iwona",
@@ -67200,7 +67862,9 @@
            "y": 2,
            "x": 20
          }
-       ]
+       ],
+       "author": "Andrzej Okrasinski",
+       "year": "August 2004"
      },
      {
        "name": "jack",
@@ -67375,7 +68039,9 @@
            "y": 10,
            "x": 8
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "April 1984"
      },
      {
        "name": "jam",
@@ -67434,7 +68100,9 @@
            "y": 3,
            "x": 6
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "1988"
      },
      {
        "name": "Jolson",
@@ -67717,7 +68385,9 @@
            "y": 10,
            "x": 18
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "November 1984"
      },
      {
        "name": "Justyna",
@@ -67804,7 +68474,9 @@
            "y": 14,
            "x": 16
          }
-       ]
+       ],
+       "author": "Andrzej Okrasinski",
+       "year": "May 2004"
      },
      {
        "name": "Karel's p15",
@@ -67923,7 +68595,9 @@
            "y": 8,
            "x": 10
          }
-       ]
+       ],
+       "author": "Karel Suhajda",
+       "year": "December 11, 2002"
      },
      {
        "name": "keeper",
@@ -68126,7 +68800,9 @@
            "y": 14,
            "x": 35
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "kickback reaction",
@@ -68173,7 +68849,9 @@
            "y": 3,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "killer toads",
@@ -68280,7 +68958,9 @@
            "y": 14,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Kok's galaxy",
@@ -68479,7 +69159,9 @@
            "y": 9,
            "x": 8
          }
-       ]
+       ],
+       "author": "Jan Kok",
+       "year": "1971"
      },
      {
        "name": "L112",
@@ -68678,7 +69360,9 @@
            "y": 22,
            "x": 41
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "July 1996"
      },
      {
        "name": "L156",
@@ -68933,7 +69617,9 @@
            "y": 19,
            "x": 46
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "August 1996"
      },
      {
        "name": "lake",
@@ -69036,7 +69722,9 @@
            "y": 6,
            "x": 9
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Laputa",
@@ -69171,7 +69859,9 @@
            "y": 9,
            "x": 6
          }
-       ]
+       ],
+       "author": "Rich Schroeppel",
+       "year": "September 1992"
      },
      {
        "name": "Lidka",
@@ -69238,7 +69928,9 @@
            "y": 2,
            "x": 8
          }
-       ]
+       ],
+       "author": "Andrzej Okrasinski",
+       "year": "July 2005"
      },
      {
        "name": "Lidka variant",
@@ -69297,7 +69989,9 @@
            "y": 2,
            "x": 8
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "unknown year"
      },
      {
        "name": "LifeLine",
@@ -69308,7 +70002,9 @@
            "y": 6,
            "x": 1
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "1971 to 1973"
      },
      {
        "name": "light bulb",
@@ -69407,7 +70103,9 @@
            "y": 7,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "1971"
      },
      {
        "name": "rotor",
@@ -69498,7 +70196,9 @@
            "y": 9,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "lightspeed bubble",
@@ -72889,7 +73589,9 @@
            "y": 59,
            "x": 36
          }
-       ]
+       ],
+       "author": "Gabriel Nivasch",
+       "year": "August 1999"
      },
      {
        "name": "lightspeed bubble period-2",
@@ -77200,7 +77902,9 @@
            "y": 58,
            "x": 48
          }
-       ]
+       ],
+       "author": "Arie Paap",
+       "year": "February 2017"
      },
      {
        "name": "lightspeed wire",
@@ -77567,7 +78271,9 @@
            "y": 5,
            "x": 7
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "October 2002"
      },
      {
        "name": "high-bandwidth telegraph",
@@ -78654,7 +79360,9 @@
            "y": 54,
            "x": 10
          }
-       ]
+       ],
+       "author": "Louis-François Handfield",
+       "year": "2017"
      },
      {
        "name": "line-cutting reaction",
@@ -79241,7 +79949,9 @@
            "y": 44,
            "x": 59
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "line-mending reaction",
@@ -79768,7 +80478,9 @@
            "y": 34,
            "x": 61
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "loading dock",
@@ -79863,7 +80575,9 @@
            "y": 5,
            "x": 7
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "September 1972"
      },
      {
        "name": "loaf",
@@ -79898,7 +80612,9 @@
            "y": 3,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "loafer c/7 spaceship",
@@ -79985,7 +80701,9 @@
            "y": 9,
            "x": 8
          }
-       ]
+       ],
+       "author": "Josh Ball",
+       "year": "17 February 2013"
      },
      {
        "name": "8-glider",
@@ -80152,7 +80870,9 @@
            "y": 6,
            "x": 30
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "loaflipflop",
@@ -80475,7 +81195,9 @@
            "y": 21,
            "x": 33
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "1990"
      },
      {
        "name": "loaf pull",
@@ -80530,7 +81252,9 @@
            "y": 6,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "loaf siamese barge",
@@ -80577,7 +81301,9 @@
            "y": 3,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "lobster",
@@ -80916,7 +81642,9 @@
            "y": 22,
            "x": 25
          }
-       ]
+       ],
+       "author": "Matthias Merzenich",
+       "year": "August 2011"
      },
      {
        "name": "lone dot agar",
@@ -82203,7 +82931,9 @@
            "y": 34,
            "x": 37
          }
-       ]
+       ],
+       "author": "Dean Hickerson and Alan W. Hensel",
+       "year": "1995"
      },
      {
        "name": "long barge",
@@ -82242,7 +82972,9 @@
            "y": 4,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long boat",
@@ -82277,7 +83009,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long bookend",
@@ -82316,7 +83050,9 @@
            "y": 4,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long canoe",
@@ -82359,7 +83095,9 @@
            "y": 2,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long integral",
@@ -82406,7 +83144,9 @@
            "y": 2,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long long barge",
@@ -82453,7 +83193,9 @@
            "y": 5,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long long boat",
@@ -82496,7 +83238,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long long canoe",
@@ -82543,7 +83287,9 @@
            "y": 2,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long long ship",
@@ -82590,7 +83336,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long long snake",
@@ -82629,7 +83377,9 @@
            "y": 6,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long shillelagh",
@@ -82672,7 +83422,9 @@
            "y": 3,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long ship",
@@ -82711,7 +83463,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "long snake",
@@ -82746,7 +83500,9 @@
            "y": 5,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "loop",
@@ -82793,7 +83549,9 @@
            "y": 5,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "LW emulator",
@@ -82920,7 +83678,9 @@
            "y": 13,
            "x": 5
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "June 1980"
      },
      {
        "name": "LWSS",
@@ -82963,7 +83723,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "Conway",
+       "year": "1970"
      },
      {
        "name": "synthesis of LWSS",
@@ -83030,7 +83792,9 @@
            "y": 3,
            "x": 9
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "unknown year"
      },
      {
        "name": "LWSS-glider bounce",
@@ -83093,7 +83857,9 @@
            "y": 12,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "LWSS-LWSS bounce",
@@ -83172,7 +83938,9 @@
            "y": 14,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "LWSS-LWSS deflection",
@@ -83251,7 +84019,9 @@
            "y": 4,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Lx200",
@@ -83582,7 +84352,9 @@
            "y": 30,
            "x": 60
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "June 1997"
      },
      {
        "name": "macrocell",
@@ -83685,7 +84457,9 @@
            "y": 46,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "mango ",
@@ -83724,7 +84498,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "mathematician",
@@ -83871,7 +84647,9 @@
            "y": 8,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1972"
      },
      {
        "name": "mazing",
@@ -83926,7 +84704,9 @@
            "y": 5,
            "x": 6
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "December 1973"
      },
      {
        "name": "memory cell",
@@ -84121,7 +84901,9 @@
            "y": 37,
            "x": 17
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Merzenich's p11",
@@ -84432,7 +85214,9 @@
            "y": 10,
            "x": 20
          }
-       ]
+       ],
+       "author": "Matthias Merzenich",
+       "year": "December 2010"
      },
      {
        "name": "Merzenich's p18",
@@ -84723,7 +85507,9 @@
            "y": 11,
            "x": 14
          }
-       ]
+       ],
+       "author": "Matthias Merzenich",
+       "year": "June 2011"
      },
      {
        "name": "metamorphosis",
@@ -84942,7 +85728,9 @@
            "y": 17,
            "x": 18
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "unknown year"
      },
      {
        "name": "metamorphosis II",
@@ -85173,7 +85961,9 @@
            "y": 17,
            "x": 29
          }
-       ]
+       ],
+       "author": "Paul Rendell",
+       "year": "January 1986"
      },
      {
        "name": "Mickey Mouse",
@@ -85284,7 +86074,9 @@
            "y": 6,
            "x": 6
          }
-       ]
+       ],
+       "author": "Mark Niemiec",
+       "year": "unknown year"
      },
      {
        "name": "mini pressure cooker",
@@ -85403,7 +86195,9 @@
            "y": 6,
            "x": 9
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "June 1972"
      },
      {
        "name": "mold",
@@ -85458,7 +86252,9 @@
            "y": 2,
            "x": 5
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "1988"
      },
      {
        "name": "monogram",
@@ -85537,7 +86333,9 @@
            "y": 7,
            "x": 4
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "August 1989"
      },
      {
        "name": "moose antlers",
@@ -85604,7 +86402,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "multiple roteightors",
@@ -86199,7 +86999,9 @@
            "y": 12,
            "x": 31
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "1990"
      },
      {
        "name": "multum in parvo",
@@ -86234,7 +87036,9 @@
            "y": 1,
            "x": 3
          }
-       ]
+       ],
+       "author": "Charles Corderman",
+       "year": "unknown year"
      },
      {
        "name": "muttering moat",
@@ -86301,7 +87105,9 @@
            "y": 7,
            "x": 6
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "May 1993"
      },
      {
        "name": "MW emulator",
@@ -86436,7 +87242,9 @@
            "y": 14,
            "x": 6
          }
-       ]
+       ],
+       "author": "Robert Wainwright ",
+       "year": "June 1980"
      },
      {
        "name": "MWSS",
@@ -86487,7 +87295,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "Conway",
+       "year": "1970"
      },
      {
        "name": "MWSS sythesized by 3 gliders",
@@ -86554,7 +87364,9 @@
            "y": 9,
            "x": 7
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "unknown year"
      },
      {
        "name": "MWSS out of the blue",
@@ -86929,7 +87741,9 @@
            "y": 11,
            "x": 40
          }
-       ]
+       ],
+       "author": "Peter Rott ",
+       "year": "November 1997"
      },
      {
        "name": "MW volcano",
@@ -87144,7 +87958,9 @@
            "y": 4,
            "x": 12
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "April 1992"
      },
      {
        "name": "natural Heisenburp",
@@ -87419,7 +88235,9 @@
            "y": 9,
            "x": 38
          }
-       ]
+       ],
+       "author": "Brice Due",
+       "year": "2006"
      },
      {
        "name": "negative spaceship",
@@ -90606,7 +91424,9 @@
            "y": 56,
            "x": 32
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": " March 2007"
      },
      {
        "name": "negentropy",
@@ -90757,7 +91577,9 @@
            "y": 8,
            "x": 11
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "new five",
@@ -90880,7 +91702,9 @@
            "y": 5,
            "x": 8
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "January 1990"
      },
      {
        "name": "new gun",
@@ -91111,7 +91935,9 @@
            "y": 18,
            "x": 33
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "1971"
      },
      {
        "name": "Noah's ark",
@@ -91182,7 +92008,9 @@
            "y": 4,
            "x": 14
          }
-       ]
+       ],
+       "author": "Charles Corderman",
+       "year": "1971"
      },
      {
        "name": "non-monotonic",
@@ -91453,7 +92281,9 @@
            "y": 14,
            "x": 10
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "August 1992"
      },
      {
        "name": "non-monotonic switch engine predecessor",
@@ -91496,7 +92326,9 @@
            "y": 6,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "NW31",
@@ -91603,7 +92435,9 @@
            "y": 10,
            "x": 24
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "octagon II",
@@ -91674,7 +92508,9 @@
            "y": 5,
            "x": 7
          }
-       ]
+       ],
+       "author": "Sol Goodman",
+       "year": "1971"
      },
      {
        "name": "octagon IV ",
@@ -91841,7 +92677,9 @@
            "y": 9,
            "x": 15
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "January 1979"
      },
      {
        "name": "octomino",
@@ -91880,7 +92718,9 @@
            "y": 2,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "odd keys",
@@ -91951,7 +92791,9 @@
            "y": 8,
            "x": 4
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": " August 1989"
      },
      {
        "name": "one-sided spaceship synthesis",
@@ -92038,7 +92880,9 @@
            "y": 2,
            "x": 20
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "onion rings",
@@ -92333,7 +93177,9 @@
            "y": 6,
            "x": 11
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "O-pentomino",
@@ -92360,7 +93206,9 @@
            "y": 5,
            "x": 0
          }
-       ]
+       ],
+       "author": "Conway's",
+       "year": "unknown year"
      },
      {
        "name": "Orion ",
@@ -92523,7 +93371,9 @@
            "y": 7,
            "x": 14
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "April 1993"
      },
      {
        "name": "Orion smaller variant",
@@ -92658,7 +93508,9 @@
            "y": 6,
            "x": 12
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "May 1999"
      },
      {
        "name": "p104 gun",
@@ -93045,7 +93897,9 @@
            "y": 38,
            "x": 20
          }
-       ]
+       ],
+       "author": "Noam Elkies",
+       "year": "21 March 1996"
      },
      {
        "name": "p11 bumper ",
@@ -93444,7 +94298,9 @@
            "y": 6,
            "x": 31
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p130 shuttle",
@@ -94003,7 +94859,9 @@
            "y": 41,
            "x": 26
          }
-       ]
+       ],
+       "author": "David Eppstein",
+       "year": "March 2004"
      },
      {
        "name": "p15 bouncer",
@@ -94266,7 +95124,9 @@
            "y": 13,
            "x": 21
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p15 bumper",
@@ -94505,7 +95365,9 @@
            "y": 6,
            "x": 28
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p184 gun",
@@ -94664,7 +95526,9 @@
            "y": 6,
            "x": 30
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "July 1996"
      },
      {
        "name": "p22 gun",
@@ -94975,7 +95839,9 @@
            "y": 27,
            "x": 20
          }
-       ]
+       ],
+       "author": "Dave Eppstein",
+       "year": "August 2000"
      },
      {
        "name": "p246 gun ",
@@ -95330,7 +96196,9 @@
            "y": 5,
            "x": 37
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "June 1996"
      },
      {
        "name": "p24 gun smaller version",
@@ -96593,7 +97461,9 @@
            "y": 41,
            "x": 31
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "December 2002"
      },
      {
        "name": "p256 gun",
@@ -96984,7 +97854,9 @@
            "y": 18,
            "x": 48
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "September 1995"
      },
      {
        "name": "p29 pentadecathlon hassler",
@@ -97631,7 +98503,9 @@
            "y": 48,
            "x": 21
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p30 gun",
@@ -97930,7 +98804,9 @@
            "y": 13,
            "x": 26
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "November 1970"
      },
      {
        "name": "p36 gun smaller version",
@@ -98605,7 +99481,9 @@
            "y": 32,
            "x": 48
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "2004"
      },
      {
        "name": "p3 bumper",
@@ -99052,7 +99930,9 @@
            "y": 42,
            "x": 18
          }
-       ]
+       ],
+       "author": "Arie Paap",
+       "year": "April 2018"
      },
      {
        "name": "p3 bumper variant",
@@ -99383,7 +100263,9 @@
            "y": 10,
            "x": 20
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p44 gun",
@@ -99850,7 +100732,9 @@
            "y": 20,
            "x": 40
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "April 1992"
      },
      {
        "name": "p44 MWSS gun",
@@ -100573,7 +101457,9 @@
            "y": 8,
            "x": 39
          }
-       ]
+       ],
+       "author": "Dieter Leithner",
+       "year": "April 1997"
      },
      {
        "name": "p45 gun",
@@ -101108,7 +101994,9 @@
            "y": 25,
            "x": 39
          }
-       ]
+       ],
+       "author": "Matthias Merzenich",
+       "year": " April 2010"
      },
      {
        "name": "p46 gun",
@@ -101483,7 +102371,9 @@
            "y": 23,
            "x": 37
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "1971"
      },
      {
        "name": "p48 gun",
@@ -103022,7 +103912,9 @@
            "y": 44,
            "x": 40
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p4 bumper",
@@ -103213,7 +104105,9 @@
            "y": 10,
            "x": 22
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p4 reflector",
@@ -104632,7 +105526,9 @@
            "y": 40,
            "x": 35
          }
-       ]
+       ],
+       "author": "Karel Suhajda",
+       "year": "October 2012"
      },
      {
        "name": "p54 shuttle",
@@ -104911,7 +105807,9 @@
            "y": 29,
            "x": 16
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1973"
      },
      {
        "name": "p5 bouncer",
@@ -105482,7 +106380,9 @@
            "y": 17,
            "x": 28
          }
-       ]
+       ],
+       "author": "Noam Elkies",
+       "year": "September 1998"
      },
      {
        "name": "p5 bumper",
@@ -105809,7 +106709,9 @@
            "y": 25,
            "x": 21
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p60 gun",
@@ -106164,7 +107066,9 @@
            "y": 37,
            "x": 26
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "1970"
      },
      {
        "name": "p690 gun",
@@ -106651,7 +107555,9 @@
            "y": 31,
            "x": 25
          }
-       ]
+       ],
+       "author": " Noam Elkies",
+       "year": "July 1996"
      },
      {
        "name": "p6 bouncer",
@@ -106962,7 +107868,9 @@
            "y": 22,
            "x": 18
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p6 bumper",
@@ -107137,7 +108045,9 @@
            "y": 21,
            "x": 21
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p6 pipsquirter",
@@ -107356,7 +108266,9 @@
            "y": 8,
            "x": 13
          }
-       ]
+       ],
+       "author": " Noam Elkies",
+       "year": "November 1997"
      },
      {
        "name": "p6 shuttle",
@@ -107459,7 +108371,9 @@
            "y": 14,
            "x": 13
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "February 2004"
      },
      {
        "name": "extended p6 shuttle",
@@ -107642,7 +108556,9 @@
            "y": 25,
            "x": 23
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p72 quasi-shuttle",
@@ -108065,7 +108981,9 @@
            "y": 31,
            "x": 22
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "August 2005"
      },
      {
        "name": "p7 bouncer",
@@ -108520,7 +109438,9 @@
            "y": 10,
            "x": 29
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p7 bumper",
@@ -108755,7 +109675,9 @@
            "y": 1,
            "x": 12
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p7 pipsquirter ",
@@ -109106,7 +110028,9 @@
            "y": 14,
            "x": 12
          }
-       ]
+       ],
+       "author": "Noam Elkies",
+       "year": "August 1999"
      },
      {
        "name": "p7 pipsquirter variant",
@@ -109941,7 +110865,9 @@
            "y": 22,
            "x": 23
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p8 bouncer",
@@ -110108,7 +111034,9 @@
            "y": 3,
            "x": 21
          }
-       ]
+       ],
+       "author": "Noam Elkies",
+       "year": "September 1998"
      },
      {
        "name": "p8 bumper",
@@ -110275,7 +111203,9 @@
            "y": 3,
            "x": 24
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p8 G-to-H",
@@ -110598,7 +111528,9 @@
            "y": 15,
            "x": 33
          }
-       ]
+       ],
+       "author": "Paul Callahan",
+       "year": "November 1998"
      },
      {
        "name": "p90 gun",
@@ -111021,7 +111953,9 @@
            "y": 44,
            "x": 25
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "unknown year"
      },
      {
        "name": "p92 gun",
@@ -111604,7 +112538,9 @@
            "y": 33,
            "x": 24
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "1971"
      },
      {
        "name": "p92 bumper",
@@ -111863,7 +112799,9 @@
            "y": 7,
            "x": 22
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "paperclip",
@@ -111926,7 +112864,9 @@
            "y": 3,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "parasite",
@@ -112905,7 +113845,9 @@
            "y": 24,
            "x": 44
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "parasite period 6 knightship",
@@ -113428,7 +114370,9 @@
            "y": 25,
            "x": 30
          }
-       ]
+       ],
+       "author": "Josh Ball",
+       "year": "April 2017"
      },
      {
        "name": "PD-pair reflector",
@@ -113623,7 +114567,9 @@
            "y": 12,
            "x": 18
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pedestle",
@@ -113838,7 +114784,9 @@
            "y": 6,
            "x": 16
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1973"
      },
      {
        "name": "penny lane",
@@ -113985,7 +114933,9 @@
            "y": 8,
            "x": 9
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1972"
      },
      {
        "name": "pentadecathlon",
@@ -114040,7 +114990,9 @@
            "y": 8,
            "x": 2
          }
-       ]
+       ],
+       "author": "Conway",
+       "year": "1970"
      },
      {
        "name": "pentant",
@@ -114159,7 +115111,9 @@
            "y": 6,
            "x": 11
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "July 1976"
      },
      {
        "name": "pentapole",
@@ -114210,7 +115164,9 @@
            "y": 8,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pentoad",
@@ -114297,7 +115253,9 @@
            "y": 2,
            "x": 11
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "June 1977"
      },
      {
        "name": "period multiplier",
@@ -114492,7 +115450,9 @@
            "y": 9,
            "x": 31
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "permanent switch",
@@ -114791,7 +115751,9 @@
            "y": 48,
            "x": 33
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "PF35W variant",
@@ -114970,7 +115932,9 @@
            "y": 1,
            "x": 26
          }
-       ]
+       ],
+       "author": "Aidan F. Pierce",
+       "year": "November 2017"
      },
      {
        "name": "Herschel's first natural glider",
@@ -115421,7 +116385,9 @@
            "y": 26,
            "x": 30
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "phase change",
@@ -115588,7 +116554,9 @@
            "y": 13,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "November 1998"
      },
      {
        "name": "p4 c/2 spaceship",
@@ -116135,7 +117103,9 @@
            "y": 11,
            "x": 24
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "unknown year"
      },
      {
        "name": "phi",
@@ -116182,7 +117152,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "phoenix",
@@ -116237,7 +117209,9 @@
            "y": 4,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "phenix extended",
@@ -116484,7 +117458,9 @@
            "y": 15,
            "x": 19
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pi climber",
@@ -116527,7 +117503,9 @@
            "y": 4,
            "x": 17
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pi-heptomino",
@@ -116562,7 +117540,9 @@
            "y": 3,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pinwheel",
@@ -116709,7 +117689,9 @@
            "y": 6,
            "x": 11
          }
-       ]
+       ],
+       "author": "Simon Norton",
+       "year": "April 1970"
      },
      {
        "name": "pi orbital",
@@ -118008,7 +118990,9 @@
            "y": 45,
            "x": 58
          }
-       ]
+       ],
+       "author": "Noam Elkies",
+       "year": "August 1995"
      },
      {
        "name": "pi portraitor",
@@ -118491,7 +119475,9 @@
            "y": 13,
            "x": 23
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "1984"
      },
      {
        "name": "pi ship",
@@ -118558,7 +119544,9 @@
            "y": 25,
            "x": 3
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "unknown year"
      },
      {
        "name": "piston",
@@ -118657,7 +119645,9 @@
            "y": 11,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "1971"
      },
      {
        "name": "pi wave",
@@ -118776,7 +119766,9 @@
            "y": 57,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pond",
@@ -118815,7 +119807,9 @@
            "y": 3,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pond on pond",
@@ -118886,7 +119880,9 @@
            "y": 8,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "popover",
@@ -119433,7 +120429,9 @@
            "y": 11,
            "x": 31
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "August 1984"
      },
      {
        "name": "P-pentomino",
@@ -119460,7 +120458,9 @@
            "y": 1,
            "x": 2
          }
-       ]
+       ],
+       "author": "Conway's",
+       "year": "unknown year"
      },
      {
        "name": "PPS",
@@ -119571,7 +120571,9 @@
            "y": 10,
            "x": 10
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "May 1998"
      },
      {
        "name": "pre-beehive",
@@ -119602,7 +120604,9 @@
            "y": 3,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pre-block",
@@ -119621,7 +120625,9 @@
            "y": 2,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pre-pre-block",
@@ -119644,7 +120650,9 @@
            "y": 3,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "two-glider-collision => MWSS & pre-pre-block",
@@ -119711,7 +120719,9 @@
            "y": 12,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pre-pulsar",
@@ -119782,7 +120792,9 @@
            "y": 9,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pressure cooker",
@@ -119921,7 +120933,9 @@
            "y": 7,
            "x": 11
          }
-       ]
+       ],
+       "author": "MIT group",
+       "year": "September 1971"
      },
      {
        "name": "protein",
@@ -120088,7 +121102,9 @@
            "y": 6,
            "x": 12
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "November 1972"
      },
      {
        "name": "pseudo period 123 gun",
@@ -121019,7 +122035,9 @@
            "y": 24,
            "x": 52
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pseudo-barberpole",
@@ -121086,13 +122104,17 @@
            "y": 2,
            "x": 11
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "August 1994"
      },
      {
        "name": "pseudo still life",
        "height": 15,
        "width": 30,
-       "pattern": []
+       "pattern": [],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "puffer",
@@ -121275,7 +122297,9 @@
            "y": 25,
            "x": 6
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "1971"
      },
      {
        "name": "pufferish",
@@ -121458,7 +122482,9 @@
            "y": 11,
            "x": 11
          }
-       ]
+       ],
+       "author": "Richard Schank",
+       "year": "November 2014"
      },
      {
        "name": "pufferish spaceship",
@@ -122685,7 +123711,9 @@
            "y": 50,
            "x": 31
          }
-       ]
+       ],
+       "author": "Ivan Fomichev",
+       "year": "December 2014"
      },
      {
        "name": "classic puffer train",
@@ -122780,7 +123808,9 @@
            "y": 17,
            "x": 4
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "unknown year"
      },
      {
        "name": "classic puffer train into a p20 spaceship",
@@ -122927,7 +123957,9 @@
            "y": 9,
            "x": 12
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "April 2006"
      },
      {
        "name": "puff suppressor",
@@ -123726,7 +124758,9 @@
            "y": 13,
            "x": 24
          }
-       ]
+       ],
+       "author": "Alan Hensel",
+       "year": "April 1994"
      },
      {
        "name": "pulsar",
@@ -123925,7 +124959,9 @@
            "y": 11,
            "x": 12
          }
-       ]
+       ],
+       "author": "Conway",
+       "year": "unknown year"
      },
      {
        "name": "pulsar quadrant",
@@ -124004,7 +125040,9 @@
            "y": 5,
            "x": 7
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "July 1973"
      },
      {
        "name": "pulse divider",
@@ -124327,7 +125365,9 @@
            "y": 16,
            "x": 24
          }
-       ]
+       ],
+       "author": "Dieter Leithner",
+       "year": "February 1998"
      },
      {
        "name": "pulshuttle V",
@@ -124998,7 +126038,9 @@
            "y": 29,
            "x": 28
          }
-       ]
+       ],
+       "author": "Robert Wainwrigh",
+       "year": "May 1985"
      },
      {
        "name": "pure glider generator",
@@ -125061,7 +126103,9 @@
            "y": 13,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "pushalong",
@@ -125196,7 +126240,9 @@
            "y": 10,
            "x": 12
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "1992"
      },
      {
        "name": "pyrotechnecium ",
@@ -125363,7 +126409,9 @@
            "y": 9,
            "x": 9
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1972"
      },
      {
        "name": "Q-pentomino",
@@ -125390,7 +126438,9 @@
            "y": 4,
            "x": 1
          }
-       ]
+       ],
+       "author": "Conway's",
+       "year": "unknown year"
      },
      {
        "name": "quad",
@@ -125461,7 +126511,9 @@
            "y": 6,
            "x": 5
          }
-       ]
+       ],
+       "author": "Robert Kraus",
+       "year": "April 1971"
      },
      {
        "name": "quadpole",
@@ -125508,7 +126560,9 @@
            "y": 7,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "quad pseudo",
@@ -125651,7 +126705,9 @@
            "y": 8,
            "x": 8
          }
-       ]
+       ],
+       "author": "Gabriel Nivasch",
+       "year": "July 2001"
      },
      {
        "name": "quad-Snark ",
@@ -126018,7 +127074,9 @@
            "y": 53,
            "x": 47
          }
-       ]
+       ],
+       "author": "Tanner Jacobi",
+       "year": "October 2017"
      },
      {
        "name": "quarter",
@@ -126125,7 +127183,9 @@
            "y": 6,
            "x": 11
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "September 2000"
      },
      {
        "name": "quasar",
@@ -126708,7 +127768,9 @@
            "y": 19,
            "x": 28
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "August 1971"
      },
      {
        "name": "quasar next Oscillators",
@@ -127675,7 +128737,9 @@
            "y": 27,
            "x": 44
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "queen bee shuttle",
@@ -127774,7 +128838,9 @@
            "y": 22,
            "x": 8
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "1970"
      },
      {
        "name": "queen bee pair",
@@ -127981,7 +129047,9 @@
            "y": 15,
            "x": 26
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "R190",
@@ -128288,7 +129356,9 @@
            "y": 26,
            "x": 37
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "July 1996"
      },
      {
        "name": "R2D2",
@@ -128411,7 +129481,9 @@
            "y": 6,
            "x": 9
          }
-       ]
+       ],
+       "author": "Peter Raynham",
+       "year": "1970"
      },
      {
        "name": "R64",
@@ -128642,7 +129714,9 @@
            "y": 9,
            "x": 25
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "September 1995"
      },
      {
        "name": "rabbits",
@@ -128685,7 +129759,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "Andrew Trevorrow",
+       "year": "1986"
      },
      {
        "name": "predecessor of rabbits",
@@ -128728,7 +129804,9 @@
            "y": 7,
            "x": 2
          }
-       ]
+       ],
+       "author": "Trevorrow",
+       "year": "October 1995"
      },
      {
        "name": "$rats",
@@ -128863,7 +129941,9 @@
            "y": 8,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1972"
      },
      {
        "name": "rattlesnake",
@@ -129002,7 +130082,9 @@
            "y": 10,
            "x": 14
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "January 2016"
      },
      {
        "name": "reanimation",
@@ -129405,7 +130487,9 @@
            "y": 6,
            "x": 24
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "rectifier",
@@ -129688,7 +130772,9 @@
            "y": 30,
            "x": 39
          }
-       ]
+       ],
+       "author": " Adam P. Goucher",
+       "year": "2009"
      },
      {
        "name": "reflector",
@@ -130163,7 +131249,9 @@
            "y": 44,
            "x": 36
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "relay",
@@ -130286,7 +131374,9 @@
            "y": 8,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "rephaser",
@@ -130349,7 +131439,9 @@
            "y": 5,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "reverse fuse",
@@ -130420,7 +131512,9 @@
            "y": 2,
            "x": 12
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "revolver",
@@ -130555,7 +131649,9 @@
            "y": 14,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "RF28B",
@@ -130890,7 +131986,9 @@
            "y": 35,
            "x": 33
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1972"
      },
      {
        "name": "RF48H",
@@ -130969,7 +132067,9 @@
            "y": 2,
            "x": 8
          }
-       ]
+       ],
+       "author": "Stephen Silver's",
+       "year": "unknown year"
      },
      {
        "name": "Rich's p16",
@@ -131112,7 +132212,9 @@
            "y": 9,
            "x": 9
          }
-       ]
+       ],
+       "author": "Rich Holmes",
+       "year": "July 2016"
      },
      {
        "name": "ring of fire",
@@ -131751,7 +132853,9 @@
            "y": 18,
            "x": 29
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "September 1992"
      },
      {
        "name": "edge shooter converter",
@@ -131934,7 +133038,9 @@
            "y": 22,
            "x": 14
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "edge shooter converter - Herschel-to-glider",
@@ -132209,7 +133315,9 @@
            "y": 1,
            "x": 29
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "roteightor ",
@@ -132356,7 +133464,9 @@
            "y": 13,
            "x": 13
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "1972"
      },
      {
        "name": "R-pentomino",
@@ -132383,7 +133493,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "rumbling river",
@@ -133150,7 +134262,9 @@
            "y": 35,
            "x": 11
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": " November 1994"
      },
      {
        "name": "Rx202",
@@ -133569,7 +134683,9 @@
            "y": 13,
            "x": 54
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "May 1997"
      },
      {
        "name": "sailboat ",
@@ -134060,7 +135176,9 @@
            "y": 9,
            "x": 26
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "June 1984"
      },
      {
        "name": "salvo",
@@ -134143,7 +135261,9 @@
            "y": 9,
            "x": 19
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "sawtooth",
@@ -134910,7 +136030,9 @@
            "y": 33,
            "x": 56
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "April 1991"
      },
      {
        "name": "Schick engine",
@@ -135077,7 +136199,9 @@
            "y": 4,
            "x": 8
          }
-       ]
+       ],
+       "author": "Paul Schick",
+       "year": "1972"
      },
      {
        "name": "scorpion ",
@@ -135148,7 +136272,9 @@
            "y": 6,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "scrubber",
@@ -135267,7 +136393,9 @@
            "y": 7,
            "x": 10
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "April 1971"
      },
      {
        "name": "seal",
@@ -136010,7 +137138,9 @@
            "y": 23,
            "x": 34
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "September 2005"
      },
      {
        "name": "seed",
@@ -136373,7 +137503,9 @@
            "y": 24,
            "x": 47
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "semi-cenark",
@@ -136672,7 +137804,9 @@
            "y": 33,
            "x": 36
          }
-       ]
+       ],
+       "author": "Tanner Jacobi",
+       "year": "November 2017"
      },
      {
        "name": "sesquihat",
@@ -136731,7 +137865,9 @@
            "y": 3,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "shillelagh",
@@ -136770,7 +137906,9 @@
            "y": 5,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "ship",
@@ -136801,7 +137939,9 @@
            "y": 3,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "ship suppressing two blinkers",
@@ -136848,7 +137988,9 @@
            "y": 1,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "one glider seed for engine of queen bee",
@@ -136899,7 +138041,9 @@
            "y": 8,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "ship in a bottle ",
@@ -137250,7 +138394,9 @@
            "y": 14,
            "x": 17
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "August 1994"
      },
      {
        "name": "ship-tie",
@@ -137305,7 +138451,9 @@
            "y": 6,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "ship-tie boat ",
@@ -137356,7 +138504,9 @@
            "y": 5,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "short keys",
@@ -137427,7 +138577,9 @@
            "y": 8,
            "x": 3
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "August 1989"
      },
      {
        "name": "side",
@@ -137462,7 +138614,9 @@
            "y": 5,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "sidecar ",
@@ -137565,7 +138719,9 @@
            "y": 7,
            "x": 9
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "1992"
      },
      {
        "name": "sidesnagger",
@@ -137692,7 +138848,9 @@
            "y": 11,
            "x": 19
          }
-       ]
+       ],
+       "author": " Chris Cain",
+       "year": "May 2015"
      },
      {
        "name": "sidewalk",
@@ -137755,7 +138913,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "siesta",
@@ -137962,7 +139122,9 @@
            "y": 5,
            "x": 11
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1973"
      },
      {
        "name": "elbow-like converter",
@@ -139045,7 +140207,9 @@
            "y": 25,
            "x": 43
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "unknown year"
      },
      {
        "name": "Silver reflector",
@@ -139496,7 +140660,9 @@
            "y": 52,
            "x": 80
          }
-       ]
+       ],
+       "author": "Stephen Silver",
+       "year": "November 1998"
      },
      {
        "name": "Silver's p5",
@@ -139571,7 +140737,9 @@
            "y": 4,
            "x": 6
          }
-       ]
+       ],
+       "author": "Stephen Silver",
+       "year": "February 2000"
      },
      {
        "name": "Simkin glider gun",
@@ -139718,7 +140886,9 @@
            "y": 28,
            "x": 19
          }
-       ]
+       ],
+       "author": "Michael Simkin",
+       "year": "April 2015"
      },
      {
        "name": "singular flip flop",
@@ -139785,7 +140955,9 @@
            "y": 4,
            "x": 6
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "July 1972"
      },
      {
        "name": "Sir Robin",
@@ -140920,7 +142092,9 @@
            "y": 27,
            "x": 78
          }
-       ]
+       ],
+       "author": "Adam P. Goucher",
+       "year": "March 6, 2018"
      },
      {
        "name": "six Ls",
@@ -141023,7 +142197,9 @@
            "y": 4,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "sixty-nine",
@@ -141306,7 +142482,9 @@
            "y": 12,
            "x": 20
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "October 1978"
      },
      {
        "name": "skewed quad",
@@ -141377,7 +142555,9 @@
            "y": 6,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "skewed traffic light",
@@ -141664,7 +142844,9 @@
            "y": 11,
            "x": 21
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "August 1989"
      },
      {
        "name": "slide gun",
@@ -141747,7 +142929,9 @@
            "y": 3,
            "x": 19
          }
-       ]
+       ],
+       "author": "Dieter Leithner",
+       "year": "July 1994"
      },
      {
        "name": "sliding block memory",
@@ -141810,7 +142994,9 @@
            "y": 2,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "slow glider construction",
@@ -141993,7 +143179,9 @@
            "y": 54,
            "x": 39
          }
-       ]
+       ],
+       "author": "Nick Gotts",
+       "year": "May 1997"
      },
      {
        "name": "small lake",
@@ -142080,7 +143268,9 @@
            "y": 5,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "smiley",
@@ -142163,7 +143353,9 @@
            "y": 7,
            "x": 6
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "July 1994"
      },
      {
        "name": "snacker",
@@ -142330,7 +143522,9 @@
            "y": 20,
            "x": 10
          }
-       ]
+       ],
+       "author": "Mark Niemiec",
+       "year": "1972"
      },
      {
        "name": "alternative stabilizer",
@@ -142577,7 +143771,9 @@
            "y": 31,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "April 1998"
      },
      {
        "name": "snail",
@@ -143096,7 +144292,9 @@
            "y": 2,
            "x": 20
          }
-       ]
+       ],
+       "author": "Tim Coe",
+       "year": "January 1996"
      },
      {
        "name": "snake",
@@ -143127,7 +144325,9 @@
            "y": 4,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "snake bridge snake",
@@ -143182,7 +144382,9 @@
            "y": 4,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "snake dance",
@@ -143317,7 +144519,9 @@
            "y": 6,
            "x": 8
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "May 1972"
      },
      {
        "name": "snake pit",
@@ -143428,7 +144632,9 @@
            "y": 7,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p3 snake pit",
@@ -143579,7 +144785,9 @@
            "y": 6,
            "x": 10
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "snake siamese snake",
@@ -143626,7 +144834,9 @@
            "y": 7,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Snark ",
@@ -144481,7 +145691,9 @@
            "y": 22,
            "x": 51
          }
-       ]
+       ],
+       "author": "Mike Playle",
+       "year": "25 April 2013"
      },
      {
        "name": "sombreros",
@@ -144688,7 +145900,9 @@
            "y": 15,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1972"
      },
      {
        "name": "soup",
@@ -145623,7 +146837,9 @@
            "y": 31,
            "x": 15
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "spacefiller",
@@ -146378,7 +147594,9 @@
            "y": 9,
            "x": 26
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "September 1993"
      },
      {
        "name": "space nonfiller",
@@ -147161,7 +148379,9 @@
            "y": 18,
            "x": 30
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "14 April 1999"
      },
      {
        "name": "space rake",
@@ -147428,13 +148648,17 @@
            "y": 5,
            "x": 18
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "discovery of elementary spaceships with new velocities",
        "height": 66,
        "width": 21,
-       "pattern": []
+       "pattern": [],
+       "author": "unknown author",
+       "year": "July 2018"
      },
      {
        "name": "spark coil",
@@ -147513,7 +148737,9 @@
            "y": 8,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "April 1997"
      },
      {
        "name": "sparking eater",
@@ -147764,7 +148990,9 @@
            "y": 22,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "April 1997"
      },
      {
        "name": "sparky",
@@ -148239,7 +149467,9 @@
            "y": 11,
            "x": 12
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "speed booster p30 technology",
@@ -148658,7 +149888,9 @@
            "y": 21,
            "x": 22
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "S-pentomino",
@@ -148685,7 +149917,9 @@
            "y": 3,
            "x": 1
          }
-       ]
+       ],
+       "author": "Conway's",
+       "year": "unknown year"
      },
      {
        "name": "spider",
@@ -148996,7 +150230,9 @@
            "y": 28,
            "x": 6
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "April 1997"
      },
      {
        "name": "spiral",
@@ -149083,7 +150319,9 @@
            "y": 7,
            "x": 6
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "1971"
      },
      {
        "name": "splitter",
@@ -149462,7 +150700,9 @@
            "y": 2,
            "x": 29
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "squaredance",
@@ -149533,7 +150773,9 @@
            "y": 7,
            "x": 7
          }
-       ]
+       ],
+       "author": "Don Woods",
+       "year": "1971"
      },
      {
        "name": "stabilized switch engine",
@@ -149956,7 +151198,9 @@
            "y": 40,
            "x": 59
          }
-       ]
+       ],
+       "author": "Charles Corderman",
+       "year": "unknown year"
      },
      {
        "name": "stairstep hexomino",
@@ -149987,7 +151231,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "stamp collection",
@@ -150418,7 +151664,9 @@
            "y": 45,
            "x": 22
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "star",
@@ -150569,7 +151817,9 @@
            "y": 6,
            "x": 10
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "February 1993"
      },
      {
        "name": "statorless p5",
@@ -150848,7 +152098,9 @@
            "y": 15,
            "x": 13
          }
-       ]
+       ],
+       "author": "Josh Ball",
+       "year": "June 2016"
      },
      {
        "name": "stillater ",
@@ -150943,7 +152195,9 @@
            "y": 5,
            "x": 7
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "September 1985"
      },
      {
        "name": "still life",
@@ -152054,7 +153308,9 @@
            "y": 19,
            "x": 24
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "still life tagalong",
@@ -152317,7 +153573,9 @@
            "y": 4,
            "x": 16
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "stop and go",
@@ -152496,7 +153754,9 @@
            "y": 18,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "unknown year"
      },
      {
        "name": "stop and restart",
@@ -152883,13 +154143,17 @@
            "y": 18,
            "x": 58
          }
-       ]
+       ],
+       "author": "Martin Grant",
+       "year": "January 2016"
      },
      {
        "name": "strict still life",
        "height": 15,
        "width": 34,
-       "pattern": []
+       "pattern": [],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "strict volatility",
@@ -153088,7 +154352,9 @@
            "y": 5,
            "x": 15
          }
-       ]
+       ],
+       "author": "Noam Elkies",
+       "year": "August 1998"
      },
      {
        "name": "superfountain",
@@ -153507,7 +154773,9 @@
            "y": 18,
            "x": 17
          }
-       ]
+       ],
+       "author": "Noam Elkies",
+       "year": "February 1998"
      },
      {
        "name": "superstring",
@@ -154102,7 +155370,9 @@
            "y": 3,
            "x": 20
          }
-       ]
+       ],
+       "author": "Edward Fitzgerald",
+       "year": "1971"
      },
      {
        "name": "surprise",
@@ -154253,7 +155523,9 @@
            "y": 7,
            "x": 8
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "November 1972"
      },
      {
        "name": "SW1T43 ",
@@ -154448,7 +155720,9 @@
            "y": 11,
            "x": 17
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "SW-2",
@@ -154723,7 +155997,9 @@
            "y": 28,
            "x": 43
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "swan",
@@ -154926,7 +156202,9 @@
            "y": 12,
            "x": 11
          }
-       ]
+       ],
+       "author": "Tim Coe",
+       "year": "February 1996"
      },
      {
        "name": "switch ",
@@ -155413,7 +156691,9 @@
            "y": 32,
            "x": 27
          }
-       ]
+       ],
+       "author": "Emerson J. Perkins",
+       "year": "2007"
      },
      {
        "name": "switchable gun",
@@ -156192,7 +157472,9 @@
            "y": 40,
            "x": 44
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "switch engine",
@@ -156231,7 +157513,9 @@
            "y": 6,
            "x": 3
          }
-       ]
+       ],
+       "author": "Charles Corderman",
+       "year": "1971"
      },
      {
        "name": "three-glider collisions produce dirty reactions that produce a stabilized switch engine along with other ash",
@@ -156318,7 +157602,9 @@
            "y": 18,
            "x": 21
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "switch engine channel",
@@ -156457,7 +157743,9 @@
            "y": 10,
            "x": 31
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "symmetric",
@@ -156504,7 +157792,9 @@
            "y": 12,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "syringe",
@@ -156819,7 +158109,9 @@
            "y": 24,
            "x": 26
          }
-       ]
+       ],
+       "author": "Tanner Jacobi",
+       "year": " March 2015"
      },
      {
        "name": "table",
@@ -156850,7 +158142,9 @@
            "y": 4,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "table on table",
@@ -156905,7 +158199,9 @@
            "y": 4,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "tagalong c/4 spaceship",
@@ -157416,7 +158712,9 @@
            "y": 46,
            "x": 23
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "February 2004"
      },
      {
        "name": "Tanner's p46",
@@ -157587,7 +158885,9 @@
            "y": 13,
            "x": 12
          }
-       ]
+       ],
+       "author": "Tanner Jacobi",
+       "year": "20 October 2017"
      },
      {
        "name": "teardrop",
@@ -157630,7 +158930,9 @@
            "y": 3,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "technician",
@@ -157769,7 +159071,9 @@
            "y": 9,
            "x": 11
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "January 1973"
      },
      {
        "name": "tee",
@@ -157836,7 +159140,9 @@
            "y": 3,
            "x": 8
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "test tube baby",
@@ -157899,7 +159205,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "tetromino",
@@ -157986,7 +159294,9 @@
            "y": 39,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "p4 thumb",
@@ -158293,7 +159603,9 @@
            "y": 21,
            "x": 10
          }
-       ]
+       ],
+       "author": "David Eppstein",
+       "year": "June 2000"
      },
      {
        "name": "thunderbird",
@@ -158324,7 +159636,9 @@
            "y": 2,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "time bomb",
@@ -158399,7 +159713,9 @@
            "y": 4,
            "x": 5
          }
-       ]
+       ],
+       "author": "Doug Petrie",
+       "year": "unknown year"
      },
      {
        "name": "titanic toroidal traveler",
@@ -158442,7 +159758,9 @@
            "y": 3,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "T-nosed p4",
@@ -158589,7 +159907,9 @@
            "y": 11,
            "x": 11
          }
-       ]
+       ],
+       "author": "Robert Wainwright ",
+       "year": "October 1989"
      },
      {
        "name": "T-nosed p5",
@@ -159524,7 +160844,9 @@
            "y": 33,
            "x": 16
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "April 2005"
      },
      {
        "name": "T-nosed p6",
@@ -159707,7 +161029,9 @@
            "y": 13,
            "x": 10
          }
-       ]
+       ],
+       "author": "Achim Flammenkamp",
+       "year": "September 1994"
      },
      {
        "name": "toad ",
@@ -159738,7 +161062,9 @@
            "y": 3,
            "x": 1
          }
-       ]
+       ],
+       "author": "Simon Norton",
+       "year": "May 1970"
      },
      {
        "name": "toad-flipper",
@@ -159865,7 +161191,9 @@
            "y": 17,
            "x": 9
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "toad-sucker",
@@ -159992,7 +161320,9 @@
            "y": 17,
            "x": 10
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "toaster ",
@@ -160223,7 +161553,9 @@
            "y": 13,
            "x": 11
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "April 1992"
      },
      {
        "name": "toggleable gun",
@@ -160342,7 +161674,9 @@
            "y": 4,
            "x": 11
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "September 1996"
      },
      {
        "name": " B-to-G converter",
@@ -160773,7 +162107,9 @@
            "y": 52,
            "x": 36
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "total aperiodic",
@@ -161504,7 +162840,9 @@
            "y": 5,
            "x": 56
          }
-       ]
+       ],
+       "author": "Bill Gosper ",
+       "year": "November 1997"
      },
      {
        "name": "T-pentomino",
@@ -161531,7 +162869,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "Conway's",
+       "year": "unknown year"
      },
      {
        "name": "tractor beam",
@@ -161818,7 +163158,9 @@
            "y": 31,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "traffic circle",
@@ -162597,7 +163939,9 @@
            "y": 27,
            "x": 47
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "traffic jam",
@@ -162700,7 +164044,9 @@
            "y": 14,
            "x": 7
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "traffic light",
@@ -162755,7 +164101,9 @@
            "y": 5,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "traffic lights extruder",
@@ -162982,7 +164330,9 @@
            "y": 47,
            "x": 8
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "October 2006"
      },
      {
        "name": "trans-beacon on table",
@@ -163037,7 +164387,9 @@
            "y": 4,
            "x": 6
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "trans-boat with tail",
@@ -163080,7 +164432,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "trans-loaf with tail",
@@ -163131,7 +164485,9 @@
            "y": 6,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "transparent block reaction",
@@ -163182,7 +164538,9 @@
            "y": 2,
            "x": 3
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1988"
      },
      {
        "name": "transparent lane",
@@ -163277,7 +164635,9 @@
            "y": 15,
            "x": 23
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "tremi-Snark",
@@ -163556,7 +164916,9 @@
            "y": 25,
            "x": 39
          }
-       ]
+       ],
+       "author": "Tanner Jacobi",
+       "year": "7 September 2017"
      },
      {
        "name": "trice tongs",
@@ -163627,7 +164989,9 @@
            "y": 7,
            "x": 6
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "February 1982"
      },
      {
        "name": "trigger",
@@ -163918,7 +165282,9 @@
            "y": 15,
            "x": 60
          }
-       ]
+       ],
+       "author": "Chris Cain",
+       "year": "March 2015"
      },
      {
        "name": "triple caterer",
@@ -164117,7 +165483,9 @@
            "y": 12,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "October 1989"
      },
      {
        "name": "triple pseudo",
@@ -164252,7 +165620,9 @@
            "y": 2,
            "x": 9
          }
-       ]
+       ],
+       "author": "Gabriel Nivasch",
+       "year": "July 2001"
      },
      {
        "name": "triplet",
@@ -164319,7 +165689,9 @@
            "y": 38,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "tripole",
@@ -164362,7 +165734,9 @@
            "y": 6,
            "x": 5
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "tritoad",
@@ -164609,7 +165983,9 @@
            "y": 9,
            "x": 13
          }
-       ]
+       ],
+       "author": " Dave Buckingham",
+       "year": "October 1977"
      },
      {
        "name": "trivial",
@@ -164720,7 +166096,9 @@
            "y": 4,
            "x": 11
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "trivial parent",
@@ -164747,7 +166125,9 @@
            "y": 1,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "trivial p6",
@@ -165250,7 +166630,9 @@
            "y": 19,
            "x": 17
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "December 1994"
      },
      {
        "name": "trombone slide",
@@ -166129,7 +167511,9 @@
            "y": 29,
            "x": 56
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "T-tetromino",
@@ -166152,7 +167536,9 @@
            "y": 2,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "tub",
@@ -166175,7 +167561,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "tubber",
@@ -166374,7 +167762,9 @@
            "y": 9,
            "x": 12
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "June 1972"
      },
      {
        "name": "tubeater",
@@ -166689,7 +168079,9 @@
            "y": 29,
            "x": 22
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "September 2005"
      },
      {
        "name": "tubstretcher",
@@ -166824,7 +168216,9 @@
            "y": 6,
            "x": 11
          }
-       ]
+       ],
+       "author": "Nicolay Beluchenko",
+       "year": "August 2005"
      },
      {
        "name": "tub with tail",
@@ -166863,7 +168257,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "tumbler",
@@ -166934,7 +168330,9 @@
            "y": 7,
            "x": 4
          }
-       ]
+       ],
+       "author": "George Collins",
+       "year": "1970"
      },
      {
        "name": "tumbling T-tetson",
@@ -167077,7 +168475,9 @@
            "y": 12,
            "x": 9
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "unknown year"
      },
      {
        "name": "turner",
@@ -167512,7 +168912,9 @@
            "y": 4,
            "x": 38
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "turning toads",
@@ -167851,7 +169253,9 @@
            "y": 55,
            "x": 7
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "October 1989"
      },
      {
        "name": "turtle",
@@ -168034,7 +169438,9 @@
            "y": 12,
            "x": 9
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "August 1989"
      },
      {
        "name": "twin bees shuttle",
@@ -168193,7 +169599,9 @@
            "y": 3,
            "x": 16
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "1971"
      },
      {
        "name": "twin bees shuttle pair",
@@ -168352,7 +169760,9 @@
            "y": 32,
            "x": 13
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "unknown year"
      },
      {
        "name": "twin bees shuttle spark",
@@ -168407,7 +169817,9 @@
            "y": 4,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "glider conversion into LWSS",
@@ -168562,7 +169974,9 @@
            "y": 11,
            "x": 12
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "twinhat",
@@ -168637,7 +170051,9 @@
            "y": 5,
            "x": 4
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "twirling T-tetsons II",
@@ -168868,7 +170284,9 @@
            "y": 17,
            "x": 23
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "unknown year"
      },
      {
        "name": "two eaters",
@@ -168931,7 +170349,9 @@
            "y": 9,
            "x": 7
          }
-       ]
+       ],
+       "author": "Bill Gosper",
+       "year": "September 1971"
      },
      {
        "name": "two pulsar quadrants",
@@ -169010,7 +170430,9 @@
            "y": 5,
            "x": 8
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "July 1973"
      },
      {
        "name": "unix",
@@ -169081,7 +170503,9 @@
            "y": 4,
            "x": 7
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "February 1976"
      },
      {
        "name": "U-pentomino",
@@ -169108,7 +170532,9 @@
            "y": 3,
            "x": 1
          }
-       ]
+       ],
+       "author": "Conway's",
+       "year": "unknown year"
      },
      {
        "name": "Venetian blinds",
@@ -174131,7 +175557,9 @@
            "y": 45,
            "x": 57
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "very long house",
@@ -174186,7 +175614,9 @@
            "y": 7,
            "x": 2
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "volatility",
@@ -174753,7 +176183,9 @@
            "y": 22,
            "x": 27
          }
-       ]
+       ],
+       "author": "Jason Summers",
+       "year": "August 2012"
      },
      {
        "name": "V-pentomino",
@@ -174780,7 +176212,9 @@
            "y": 3,
            "x": 2
          }
-       ]
+       ],
+       "author": "Conway's",
+       "year": "unknown year"
      },
      {
        "name": "V spark",
@@ -174799,7 +176233,9 @@
            "y": 2,
            "x": 1
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "spark convering a pre-block into glider",
@@ -174830,7 +176266,9 @@
            "y": 5,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Wainwright's tagalong",
@@ -175009,7 +176447,9 @@
            "y": 4,
            "x": 11
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "washerwoman",
@@ -175196,7 +176636,9 @@
            "y": 1,
            "x": 4
          }
-       ]
+       ],
+       "author": "Earl Abbe",
+       "year": "September 1971"
      },
      {
        "name": "washing machine",
@@ -175299,7 +176741,9 @@
            "y": 6,
            "x": 7
          }
-       ]
+       ],
+       "author": "Robert Wainwright",
+       "year": "June 1972"
      },
      {
        "name": "wasp",
@@ -175518,7 +176962,9 @@
            "y": 3,
            "x": 9
          }
-       ]
+       ],
+       "author": "David Bell",
+       "year": "March 1998"
      },
      {
        "name": "wavefront",
@@ -175669,7 +177115,9 @@
            "y": 6,
            "x": 12
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1976"
      },
      {
        "name": "wavestretcher",
@@ -176516,7 +177964,9 @@
            "y": 38,
            "x": 44
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "weekender ",
@@ -176667,7 +178117,9 @@
            "y": 11,
            "x": 10
          }
-       ]
+       ],
+       "author": "David Eppstein",
+       "year": "January 2000"
      },
      {
        "name": "why not",
@@ -176730,7 +178182,9 @@
            "y": 4,
            "x": 6
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "July 1977"
      },
      {
        "name": "wickstretcher",
@@ -177441,7 +178895,9 @@
            "y": 39,
            "x": 15
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "October 1992"
      },
      {
        "name": "windmill",
@@ -177672,7 +179128,9 @@
            "y": 7,
            "x": 17
          }
-       ]
+       ],
+       "author": "Dean Hickerson",
+       "year": "November 1989"
      },
      {
        "name": "wing",
@@ -177711,7 +179169,9 @@
            "y": 4,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "with the grain",
@@ -182870,7 +184330,9 @@
            "y": 53,
            "x": 52
          }
-       ]
+       ],
+       "author": "Gabriel Nivasch",
+       "year": "July 1999"
      },
      {
        "name": "worker bee",
@@ -183013,7 +184475,9 @@
            "y": 16,
            "x": 10
          }
-       ]
+       ],
+       "author": "Dave Buckingham",
+       "year": "1972"
      },
      {
        "name": "W-pentomino",
@@ -183040,7 +184504,9 @@
            "y": 3,
            "x": 2
          }
-       ]
+       ],
+       "author": "Conway's ",
+       "year": "unknown year"
      },
      {
        "name": "x66",
@@ -183183,7 +184649,9 @@
            "y": 3,
            "x": 10
          }
-       ]
+       ],
+       "author": "Hartmut Holzwart",
+       "year": "July 1992"
      },
      {
        "name": "X-pentomino",
@@ -183210,7 +184678,9 @@
            "y": 2,
            "x": 2
          }
-       ]
+       ],
+       "author": "Conway's",
+       "year": "unknown year"
      },
      {
        "name": "Y-pentomino",
@@ -183237,7 +184707,9 @@
            "y": 4,
            "x": 1
          }
-       ]
+       ],
+       "author": "Conway's",
+       "year": "unknown year"
      },
      {
        "name": "zebra stripes",
@@ -184056,7 +185528,9 @@
            "y": 21,
            "x": 20
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Z-hexomino",
@@ -184087,7 +185561,9 @@
            "y": 3,
            "x": 3
          }
-       ]
+       ],
+       "author": "unknown author",
+       "year": "unknown year"
      },
      {
        "name": "Z-pentomino",
@@ -184114,7 +185590,9 @@
            "y": 3,
            "x": 2
          }
-       ]
+       ],
+       "author": "Conway's",
+       "year": "unknown year"
      },
      {
        "name": "zweiback",
@@ -185045,6 +186523,8 @@
            "y": 31,
            "x": 24
          }
-       ]
+       ],
+       "author": "Mark Niemiec",
+       "year": "February 1995"
      }
    ]
