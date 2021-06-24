@@ -1,3 +1,4 @@
 // make linux/windows/mac agnostic
-// render videos with matching filename description
-// add frequency //time effect to color
+// split render and display into procs or thread
+// pipe data to ffplay directly through an api?
+// output agnostic stream data - useable by vlc/youtube (via localhost?) idk: will explore?
